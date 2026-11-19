@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>例題14 対偶を用いた証明 | 数ラボ</title>
+<title>例題7 対偶を用いた証明 | 数ラボ</title>
 <meta name="description" content="「n²が3の倍数ならばnは3の倍数」を、対偶を使って証明する方法を解説。練習問題と解答つき。">
 <link rel="stylesheet" href="katex/katex.min.css">
 <link rel="stylesheet" href="style.css">
@@ -17,17 +17,17 @@
 </div></header>
 <main class="wrap">
 
-<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-meidai.html">命題と条件・必要十分条件</a> ＞ 例題14</p>
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-meidai.html">命題と条件・必要十分条件</a> ＞ 例題7</p>
 <!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
 
-<h1 class="lh"><span class="lbadge">例題 14</span><span class="lsub">第2章　集合と命題　対偶を用いた証明</span></h1>
+<h1 class="lh"><span class="lbadge">例題 7</span><span class="lsub">第2章　集合と命題　対偶を用いた証明</span></h1>
 <div class="qbox"><p>整数 \(n\) について、\(n^2\) が \(3\) の倍数ならば、\(n\) は \(3\) の倍数であることを証明せよ。</p></div>
-<section class="bar navy"><h2>解き方（まず考え方）</h2><p>そのままでは証明しにくいとき、<b>対偶</b>を証明する。対偶が真なら、もとの命題も真（例題13）。</p><p>「\(3\) の倍数でない整数」は、\(3\) でわった余りで分けて \(3k+1,\ 3k+2\)（\(k\) は整数）と表す。</p><div class="fig"><svg viewBox="0 0 368 70" role="img" aria-label="図"><rect x="10" y="10" width="96" height="50" rx="8" fill="#fff" stroke="#1F4E9A" stroke-width="2"/><text x="58.0" y="32" font-size="11.5" text-anchor="middle">① 対偶を</text><text x="58.0" y="48" font-size="11.5" text-anchor="middle">つくる</text><line x1="110" y1="35" x2="130" y2="35" stroke="#222" stroke-width="2"/><path d="M124,29 L134,35 L124,41" fill="none" stroke="#222" stroke-width="2"/><rect x="136" y="10" width="96" height="50" rx="8" fill="#fff" stroke="#1F4E9A" stroke-width="2"/><text x="184.0" y="32" font-size="11.5" text-anchor="middle">② 対偶を</text><text x="184.0" y="48" font-size="11.5" text-anchor="middle">証明する</text><line x1="236" y1="35" x2="256" y2="35" stroke="#222" stroke-width="2"/><path d="M250,29 L260,35 L250,41" fill="none" stroke="#222" stroke-width="2"/><rect x="262" y="10" width="96" height="50" rx="8" fill="#9fb8e8" stroke="#1F4E9A" stroke-width="2"/><text x="310.0" y="32" font-size="11.5" text-anchor="middle">③ もとの命題</text><text x="310.0" y="48" font-size="11.5" text-anchor="middle">も真</text></svg><p class="figcap">対偶が真なら、もとの命題も真（真偽が一致するから）</p></div></section>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>そのままでは証明しにくいとき、<b>対偶</b>を証明する。対偶が真なら、もとの命題も真（例題6）。</p><p>「\(3\) の倍数でない整数」は、\(3\) でわった余りで分けて \(3k+1,\ 3k+2\)（\(k\) は整数）と表す。</p><div class="fig"><svg viewBox="0 0 368 70" role="img" aria-label="図"><rect x="10" y="10" width="96" height="50" rx="8" fill="#fff" stroke="#1F4E9A" stroke-width="2"/><text x="58.0" y="32" font-size="11.5" text-anchor="middle">① 対偶を</text><text x="58.0" y="48" font-size="11.5" text-anchor="middle">つくる</text><line x1="110" y1="35" x2="130" y2="35" stroke="#222" stroke-width="2"/><path d="M124,29 L134,35 L124,41" fill="none" stroke="#222" stroke-width="2"/><rect x="136" y="10" width="96" height="50" rx="8" fill="#fff" stroke="#1F4E9A" stroke-width="2"/><text x="184.0" y="32" font-size="11.5" text-anchor="middle">② 対偶を</text><text x="184.0" y="48" font-size="11.5" text-anchor="middle">証明する</text><line x1="236" y1="35" x2="256" y2="35" stroke="#222" stroke-width="2"/><path d="M250,29 L260,35 L250,41" fill="none" stroke="#222" stroke-width="2"/><rect x="262" y="10" width="96" height="50" rx="8" fill="#9fb8e8" stroke="#1F4E9A" stroke-width="2"/><text x="310.0" y="32" font-size="11.5" text-anchor="middle">③ もとの命題</text><text x="310.0" y="48" font-size="11.5" text-anchor="middle">も真</text></svg><p class="figcap">対偶が真なら、もとの命題も真（真偽が一致するから）</p></div></section>
 <section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 対偶をつくる</div><div class="step-b"><p>「\(n\) が \(3\) の倍数でないならば、\(n^2\) は \(3\) の倍数でない」</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> \(n\) を式で表す</div><div class="step-b"><p>\(n\) が \(3\) の倍数でないとき、整数 \(k\) を用いて \(n=3k+1\) または \(n=3k+2\) と表せる。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> \(n^2\) を計算して、\(3\) でわった余りを調べる</div><div class="step-b"><p>\(n=3k+1\) のとき：\(n^2=9k^2+6k+1=3(3k^2+2k)+1\)<br>\(n=3k+2\) のとき：\(n^2=9k^2+12k+4=3(3k^2+4k+1)+1\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> 結論を書く</div><div class="step-b"><p>どちらも \(n^2\) を \(3\) でわった余りは \(1\)。対偶が真だから、もとの命題も真。</p></div></div></section>
 <div class="ktw"><section class="bar navy"><h2>解くコツ</h2><ul class="kt"><li>結論に「〜でない」「〜の倍数でない」がふくまれるときは、対偶を考えるとやさしくなる。</li><li>整数は余りで表す。偶奇は \(2k,\ 2k+1\)、\(3\) の倍数でないは \(3k\pm1\)。最後に「対偶が真だからもとも真」と書く。</li></ul></section></div>
 
 <div class="abox tx"><p class="ah">【答案（テストに書く形）】</p><p>【証明】対偶「\(n\) が \(3\) の倍数でないならば、\(n^2\) は \(3\) の倍数でない」を証明する。</p><p>\(n\) が \(3\) の倍数でないとき、整数 \(k\) を用いて \(n=3k+1\) または \(n=3k+2\) と表せる。</p><p>(i) \(n=3k+1\) のとき　\(n^2=9k^2+6k+1=3(3k^2+2k)+1\)</p><p>(ii) \(n=3k+2\) のとき　\(n^2=9k^2+12k+4=3(3k^2+4k+1)+1\)</p><p>いずれの場合も \(n^2\) は \(3\) の倍数でない。よって対偶が真であるから、もとの命題も真である。</p><p class="ans-mark">証明終</p></div>
-<section class="bar navy"><h2>練習問題 14</h2><p>次の命題を、対偶を用いて証明せよ。</p><ol class="prac txt"><li>整数 \(n\) について、\(n^2\) が奇数ならば、\(n\) は奇数である。</li><li>整数 \(a,\ b\) について、\(ab\) が奇数ならば、\(a\) も \(b\) も奇数である。</li><li>整数 \(n\) について、\(n^2\) が \(5\) の倍数ならば、\(n\) は \(5\) の倍数である。</li></ol></section>
+<section class="bar navy"><h2>練習問題 7</h2><p>次の命題を、対偶を用いて証明せよ。</p><ol class="prac txt"><li>整数 \(n\) について、\(n^2\) が奇数ならば、\(n\) は奇数である。</li><li>整数 \(a,\ b\) について、\(ab\) が奇数ならば、\(a\) も \(b\) も奇数である。</li><li>整数 \(n\) について、\(n^2\) が \(5\) の倍数ならば、\(n\) は \(5\) の倍数である。</li></ol></section>
 
 <p><a class="btn" href="kaito-ch2-14.html">解答を見る（別冊）</a></p>
 <!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
