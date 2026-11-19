@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題8 命題の真偽と反例 | 数ラボ</title>
+<meta name="description" content="命題「pならばq」の真偽を、集合の包含関係と反例で判定する方法を解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+
+</head>
+<body class="ch2">
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-meidai.html">命題と条件・必要十分条件</a> ＞ 例題8</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 8</span><span class="lsub">第2章　集合と命題　命題の真偽と反例</span></h1>
+<div class="qbox"><p>実数 \(x\) について、命題「\(x>1\) ならば \(x>2\)」の真偽を調べよ。偽ならば、反例をあげよ。</p></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>命題「\(p\) ならば \(q\)」で、\(p\) を満たすものの集合を \(P\)、\(q\) を満たすものの集合を \(Q\) とする。</p><ul class="cond"><li>\(P\subset Q\)（\(P\) がすべて \(Q\) に入る）なら、<b>真</b></li><li>\(P\) に入るのに \(Q\) に入らないものが<b>1つでもあれば、偽</b>。そのものを<b>反例</b>という</li></ul><div class="fig"><svg viewBox="0 0 330 126" role="img" aria-label="図"><line x1="20" y1="96" x2="320" y2="96" stroke="#222" stroke-width="1.6"/><line x1="30.0" y1="92" x2="30.0" y2="100" stroke="#222"/><text x="30.0" y="115" font-size="12" text-anchor="middle">0</text><line x1="100.0" y1="92" x2="100.0" y2="100" stroke="#222"/><text x="100.0" y="115" font-size="12" text-anchor="middle">1</text><line x1="170.0" y1="92" x2="170.0" y2="100" stroke="#222"/><text x="170.0" y="115" font-size="12" text-anchor="middle">2</text><line x1="240.0" y1="92" x2="240.0" y2="100" stroke="#222"/><text x="240.0" y="115" font-size="12" text-anchor="middle">3</text><line x1="310.0" y1="92" x2="310.0" y2="100" stroke="#222"/><text x="310.0" y="115" font-size="12" text-anchor="middle">4</text><line x1="100.0" y1="28" x2="316" y2="28" stroke="#1F4E9A" stroke-width="4"/><line x1="100.0" y1="28" x2="100.0" y2="96" stroke="#bbb" stroke-dasharray="3 3"/><circle cx="100.0" cy="28" r="5" fill="#fff" stroke="#222" stroke-width="1.6"/><text x="20" y="20" font-size="12" fill="#1F4E9A" font-weight="700" text-anchor="start">P：x＞1</text><line x1="170.0" y1="54" x2="316" y2="54" stroke="#1F4E9A" stroke-width="4"/><line x1="170.0" y1="54" x2="170.0" y2="96" stroke="#bbb" stroke-dasharray="3 3"/><circle cx="170.0" cy="54" r="5" fill="#fff" stroke="#222" stroke-width="1.6"/><text x="20" y="46" font-size="12" fill="#1F4E9A" font-weight="700" text-anchor="start">Q：x＞2</text><circle cx="170.0" cy="28" r="6" fill="#d11"/><text x="179.0" y="44" font-size="11.5" fill="#d11" font-weight="700">反例 x=2</text></svg><p class="figcap">○は端の値をふくまない（●はふくむ）。\(P\) が \(Q\) からはみ出した部分（\(1&lt;x\le2\)）がすべて反例</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> \(P,\ Q\) を書く</div><div class="step-b"><p>\(P=\{x\mid x>1\}\)，\(Q=\{x\mid x>2\}\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> \(P\) に入るのに \(Q\) に入らないものがあるか調べる</div><div class="step-b"><p>\(1&lt;x\le2\) の \(x\) は \(P\) に入るが、\(Q\) には入らない。例えば \(x=2\)。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 真偽を判定する</div><div class="step-b"><p>\(P\subset Q\) でないので、偽。反例は \(x=2\)。</p></div></div></section>
+<div class="ktw"><section class="bar navy"><h2>解くコツ</h2><ul class="kt"><li>\(P,\ Q\) を数直線にかく。\(P\) が \(Q\) からはみ出したら偽で、はみ出した部分がすべて反例。</li><li>反例は「境目の値」から試す（\(x=2\) のように端、\(0\)、負の数）。「\(\ge\)」と「\(>\)」の等号のちがいに注意。</li></ul></section></div>
+
+<div class="abox tx"><p class="ah">【答案（テストに書く形）】</p><p>\(x=2\) は「\(x>1\)」を満たすが「\(x>2\)」を満たさない。</p><p>よって、この命題は<b>偽</b>。（反例：\(x=2\)）</p><p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 8</h2><p>実数 \(x\) について、次の命題の真偽を調べよ。偽ならば反例をあげよ。</p><ol class="prac txt"><li>\(x>3\) ならば \(x>1\)</li><li>\(x\ge2\) ならば \(x>2\)</li><li>\(x^2=9\) ならば \(x=3\)</li></ol></section>
+
+<p><a class="btn" href="kaito-ch2-8.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="ch2-7.html">← 前の例題</a><a href="ch2-9.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/ch2-mondai.pdf">問題編（第2章 全ページ）</a>　<a href="pdf/ch2-bessatsu.pdf">別冊 練習問題の解答（第2章）</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ 掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

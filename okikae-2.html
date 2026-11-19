@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題8 置き換え（かけ算の組み合わせ） | 数ラボ</title>
+<meta name="description" content="4つの積の形の式を、足して同じになる組でかけ算して置き換える因数分解を解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-inshu.html">因数分解</a> ＞ 例題8</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 8</span><span class="lsub">第1章　因数分解　置き換え（かけ算の組み合わせ）</span></h1>
+<div class="qbox"><p>次の式を因数分解せよ。</p>\[ (x+1)(x+2)(x+3)(x+4)-24 \]</div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>このまま全部展開すると大変。そこで<b>定数項を足して同じになる2つの組</b>（\(1+4=2+3=5\)）に分けて、2つずつ先にかけると、同じかたまり \(x^2+5x\) が現れる。あとは例題7と同じく \(t\) とおく。</p></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 足して同じになる組を、先にかけ算する</div><div class="step-b"><p>\((x+1)(x+4)=x^2+5x+4\)、\((x+2)(x+3)=x^2+5x+6\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 共通の \(x^2+5x\) を \(t\) とおく</div><div class="step-b"><p>\((t+4)(t+6)-24=t^2+10t+24-24=t^2+10t=t(t+10)\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> \(t\) を \(x^2+5x\) に戻す</div><div class="step-b"><p>\((x^2+5x)(x^2+5x+10)\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> まだ分解できるか確認する</div><div class="step-b"><p>\(x^2+5x=x(x+5)\)。\(x^2+5x+10\) は、かけて \(10\)、足して \(5\) になる整数の組がないので、ここで終わり。</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 \(x^2+5x=t\) とおくと</p>\[ \begin{aligned}(\text{与式})&=(x^2+5x+4)(x^2+5x+6)-24\\&=(t+4)(t+6)-24\\&=t^2+10t\\&=t(t+10)\\&=(x^2+5x)(x^2+5x+10)\\&=x(x+5)(x^2+5x+10)\end{aligned} \]<p class="ans-mark">答</p></div>
+
+<section class="bar navy"><h2>練習問題 8</h2><p class="pnote">次の式を因数分解せよ。</p><ol class="prac"><li>\((x+1)(x+3)(x+4)(x+6)-72\)</li><li>\((x+2)(x+3)(x+4)(x+5)-24\)</li><li>\((x+1)(x+2)(x+3)(x+4)-120\)</li></ol></section>
+
+<p><a class="btn" href="kaito-okikae-2.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="okikae-1.html">← 前の例題</a><a href="jisu.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/mondai.pdf">問題編（全ページ）</a>　<a href="pdf/bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

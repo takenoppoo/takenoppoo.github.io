@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題11 絶対値を含む方程式（場合分け） | 数ラボ</title>
+<meta name="description" content="右辺に x を含む絶対値の方程式を、場合分けして解く方法を手順どおりに解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-ichiji.html">1次不等式</a> ＞ 例題11</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 11</span><span class="lsub">第4章　1次不等式　絶対値を含む方程式（場合分け）</span></h1>
+<div class="qbox"><p>次の方程式を解け。</p>\[ |x-3|=2x \]</div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>右辺が \(x\) の式のときは、<b>絶対値の中の符号で場合分け</b>して絶対値をはずす。</p>
+<ol class="cond"><li>中が \(0\) 以上：そのままはずす</li><li>中が負：\(-\) をつけてはずす</li><li>求めた \(x\) が、場合分けの条件に合うか<b>必ず確かめる</b></li></ol></section>
+<section class="bar navy"><h2>図で見る</h2><div class="fig plot"><svg viewBox="0 0 420 300" role="img" aria-label="グラフ"><line x1="44" y1="200.72727272727275" x2="400" y2="200.72727272727275" stroke="#555" stroke-width="1.6"/><line x1="133.0" y1="16" x2="133.0" y2="270" stroke="#555" stroke-width="1.6"/><line x1="44.0" y1="196.72727272727275" x2="44.0" y2="204.72727272727275" stroke="#555"/><text x="44.0" y="220.72727272727275" class="pl-n">−2</text><line x1="88.5" y1="196.72727272727275" x2="88.5" y2="204.72727272727275" stroke="#555"/><text x="88.5" y="220.72727272727275" class="pl-n">−1</text><line x1="177.5" y1="196.72727272727275" x2="177.5" y2="204.72727272727275" stroke="#555"/><text x="177.5" y="220.72727272727275" class="pl-n">1</text><line x1="222.0" y1="196.72727272727275" x2="222.0" y2="204.72727272727275" stroke="#555"/><text x="222.0" y="220.72727272727275" class="pl-n">2</text><line x1="266.5" y1="196.72727272727275" x2="266.5" y2="204.72727272727275" stroke="#555"/><text x="266.5" y="220.72727272727275" class="pl-n">3</text><line x1="311.0" y1="196.72727272727275" x2="311.0" y2="204.72727272727275" stroke="#555"/><text x="311.0" y="220.72727272727275" class="pl-n">4</text><line x1="355.5" y1="196.72727272727275" x2="355.5" y2="204.72727272727275" stroke="#555"/><text x="355.5" y="220.72727272727275" class="pl-n">5</text><line x1="400.0" y1="196.72727272727275" x2="400.0" y2="204.72727272727275" stroke="#555"/><text x="400.0" y="220.72727272727275" class="pl-n">6</text><line x1="129.0" y1="270.0" x2="137.0" y2="270.0" stroke="#555"/><text x="125.0" y="275.0" class="pl-n" text-anchor="end">−3</text><line x1="129.0" y1="246.9090909090909" x2="137.0" y2="246.9090909090909" stroke="#555"/><text x="125.0" y="251.9090909090909" class="pl-n" text-anchor="end">−2</text><line x1="129.0" y1="223.8181818181818" x2="137.0" y2="223.8181818181818" stroke="#555"/><text x="125.0" y="228.8181818181818" class="pl-n" text-anchor="end">−1</text><line x1="129.0" y1="177.63636363636363" x2="137.0" y2="177.63636363636363" stroke="#555"/><text x="125.0" y="182.63636363636363" class="pl-n" text-anchor="end">1</text><line x1="129.0" y1="154.54545454545456" x2="137.0" y2="154.54545454545456" stroke="#555"/><text x="125.0" y="159.54545454545456" class="pl-n" text-anchor="end">2</text><line x1="129.0" y1="131.45454545454547" x2="137.0" y2="131.45454545454547" stroke="#555"/><text x="125.0" y="136.45454545454547" class="pl-n" text-anchor="end">3</text><line x1="129.0" y1="108.36363636363637" x2="137.0" y2="108.36363636363637" stroke="#555"/><text x="125.0" y="113.36363636363637" class="pl-n" text-anchor="end">4</text><line x1="129.0" y1="85.27272727272728" x2="137.0" y2="85.27272727272728" stroke="#555"/><text x="125.0" y="90.27272727272728" class="pl-n" text-anchor="end">5</text><line x1="129.0" y1="62.18181818181819" x2="137.0" y2="62.18181818181819" stroke="#555"/><text x="125.0" y="67.18181818181819" class="pl-n" text-anchor="end">6</text><line x1="129.0" y1="39.09090909090909" x2="137.0" y2="39.09090909090909" stroke="#555"/><text x="125.0" y="44.09090909090909" class="pl-n" text-anchor="end">7</text><line x1="129.0" y1="16.0" x2="137.0" y2="16.0" stroke="#555"/><text x="125.0" y="21.0" class="pl-n" text-anchor="end">8</text><text x="396" y="192.72727272727275" class="pl-n" text-anchor="end">x</text><text x="141.0" y="26" class="pl-n">y</text><polyline fill="none" stroke="#1F4E9A" stroke-width="3" points="88.5,108.4 266.5,200.7 355.5,154.5"/><text x="48.45" y="94.50909090909093" class="pl-l" fill="#1F4E9A">y=|x−3|</text><polyline fill="none" stroke="#c0283c" stroke-width="3" points="88.5,246.9 311.0,16.0"/><text x="244.25" y="29.854545454545445" class="pl-l" fill="#c0283c">y=2x</text><circle cx="177.5" cy="154.54545454545456" r="6" fill="#c0283c"/><text x="187.5" y="174.54545454545456" class="pl-l" fill="#c0283c">(1, 2)</text></svg></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 場合分けして絶対値をはずす</div><div class="step-b"><p>\(x\geqq3\) のとき \(|x-3|=x-3\)<br>\(x&lt;3\) のとき \(|x-3|=-(x-3)\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> \(x\geqq3\) のとき</div><div class="step-b"><p>\(x-3=2x\) より \(x=-3\)。これは \(x\geqq3\) に<b>合わない</b>ので不適。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> \(x&lt;3\) のとき</div><div class="step-b"><p>\(-(x-3)=2x\) より \(3=3x\)、\(x=1\)。これは \(x&lt;3\) に合う。</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 \(x\geqq3\) では解なし、\(x&lt;3\) では \(x=1\)。よって</p>\[ x=1 \]<p class="ans-mark">答</p><p class="check">検算：\(x=1\) のとき、左辺 \(|1-3|=2\)、右辺 \(2\times1=2\)　\(\checkmark\)</p></div>
+<section class="bar tip"><h2>解くコツ・注意</h2><ul><li>場合分けの境目は<b>絶対値の中身が \(0\) になる \(x\)</b>（ここでは \(x=3\)）。</li><li>求めた \(x\) は、<b>場合分けの条件に合うか必ず確認</b>する。合わなければ不適として捨てる。</li><li>別解：絶対値は \(0\) 以上なので、右辺 \(2x\geqq0\)（\(x\geqq0\)）が必要。これで不適な解を先に除ける。</li><li>図のとおり、方程式の解は2つのグラフの交点の \(x\) 座標。交点は \(x=1\) の1つだけ。</li><li>発展：絶対値が2つ以上あるときは、中身が \(0\) になる \(x\) で数直線を区切って場合分けする。</li></ul></section>
+<section class="bar navy"><h2>練習問題 11</h2><p class="pask-h">次の方程式を解け。</p><ol class="prac"><li>\(\displaystyle |x+2|=3x\)</li><li>\(\displaystyle |x-4|=2x-5\)</li><li>\(\displaystyle |2x-1|=x+4\)</li></ol></section>
+
+<p><a class="btn" href="kaito-ichiji-11.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="ichiji-10.html">← 前の例題</a><a href="shomatsu-ichiji.html">章末問題へ →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/ichiji-mondai.pdf">問題編（全ページ）</a>　<a href="pdf/ichiji-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

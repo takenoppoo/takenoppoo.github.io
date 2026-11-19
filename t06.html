@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題3 正規分布の標準化と正規分布表 | 数ラボ</title>
+<meta name="description" content="正規分布 N(m, σ²) を標準化して、正規分布表から確率を求める手順。図つき。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-B.html">数学B</a> ＞ <a href="unit-nikou.html">二項分布・正規分布</a> ＞ 例題3</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 3</span><span class="lsub">統計的な推測　正規分布の標準化</span></h1>
+<div class="qbox qflex"><div class="qt"><p>確率変数 \(X\) が正規分布 \(N(50\), \(10^2)\) に従うとき、\(P(40\leqq X\leqq65)\) を求めよ。ただし、\(p(u)=P(0\leqq Z\leqq u)\) とし、\(p(1)=0.3413\), \(p(1.5)=0.4332\) とする。</p></div><div class="fig"><svg viewBox="0 0 300 170" role="img" aria-label="N(50, 10²) の確率" xmlns="http://www.w3.org/2000/svg"><polygon points="112.2,136.0 112.2,72.7 113.4,70.7 114.6,68.8 115.8,66.8 116.9,64.8 118.1,62.9 119.3,61.0 120.5,59.1 121.7,57.2 122.8,55.4 124.0,53.6 125.2,51.9 126.4,50.2 127.6,48.5 128.8,46.9 129.9,45.4 131.1,43.9 132.3,42.5 133.5,41.2 134.7,39.9 135.8,38.7 137.0,37.6 138.2,36.6 139.4,35.7 140.6,34.9 141.7,34.1 142.9,33.5 144.1,32.9 145.3,32.5 146.5,32.1 147.6,31.9 148.8,31.7 150.0,31.7 151.2,31.7 152.4,31.9 153.5,32.1 154.7,32.5 155.9,32.9 157.1,33.5 158.3,34.1 159.4,34.9 160.6,35.7 161.8,36.6 163.0,37.6 164.2,38.7 165.3,39.9 166.5,41.2 167.7,42.5 168.9,43.9 170.1,45.4 171.2,46.9 172.4,48.5 173.6,50.2 174.8,51.9 176.0,53.6 177.2,55.4 178.3,57.2 179.5,59.1 180.7,61.0 181.9,62.9 183.1,64.8 184.2,66.8 185.4,68.8 186.6,70.7 187.8,72.7 189.0,74.7 190.1,76.7 191.3,78.6 192.5,80.6 193.7,82.5 194.9,84.4 196.0,86.3 197.2,88.2 198.4,90.1 199.6,91.9 200.8,93.7 201.9,95.5 203.1,97.2 204.3,98.9 205.5,100.5 206.7,102.1 206.7,136.0" fill="#d9822b" fill-opacity="0.45" stroke="none"/><polyline fill="none" stroke="#1F4E9A" stroke-width="2.3" points="14.0,135.8 15.4,135.8 16.7,135.8 18.1,135.8 19.4,135.7 20.8,135.7 22.2,135.7 23.5,135.6 24.9,135.6 26.2,135.5 27.6,135.5 29.0,135.4 30.3,135.3 31.7,135.2 33.0,135.1 34.4,135.0 35.8,134.9 37.1,134.8 38.5,134.7 39.8,134.5 41.2,134.4 42.6,134.2 43.9,134.0 45.3,133.8 46.6,133.5 48.0,133.3 49.4,133.0 50.7,132.7 52.1,132.4 53.4,132.0 54.8,131.6 56.2,131.2 57.5,130.8 58.9,130.3 60.2,129.8 61.6,129.2 63.0,128.7 64.3,128.0 65.7,127.4 67.0,126.6 68.4,125.9 69.8,125.1 71.1,124.2 72.5,123.3 73.8,122.3 75.2,121.3 76.6,120.2 77.9,119.1 79.3,117.9 80.6,116.7 82.0,115.3 83.4,114.0 84.7,112.6 86.1,111.1 87.4,109.5 88.8,107.9 90.2,106.2 91.5,104.5 92.9,102.7 94.2,100.9 95.6,99.0 97.0,97.1 98.3,95.1 99.7,93.0 101.0,90.9 102.4,88.8 103.8,86.7 105.1,84.5 106.5,82.3 107.8,80.0 109.2,77.8 110.6,75.5 111.9,73.2 113.3,70.9 114.6,68.7 116.0,66.4 117.4,64.2 118.7,61.9 120.1,59.7 121.4,57.6 122.8,55.5 124.2,53.4 125.5,51.4 126.9,49.5 128.2,47.6 129.6,45.8 131.0,44.1 132.3,42.5 133.7,40.9 135.0,39.5 136.4,38.2 137.8,37.0 139.1,35.9 140.5,34.9 141.8,34.1 143.2,33.3 144.6,32.7 145.9,32.3 147.3,31.9 148.6,31.7 150.0,31.7 151.4,31.7 152.7,31.9 154.1,32.3 155.4,32.7 156.8,33.3 158.2,34.1 159.5,34.9 160.9,35.9 162.2,37.0 163.6,38.2 165.0,39.5 166.3,40.9 167.7,42.5 169.0,44.1 170.4,45.8 171.8,47.6 173.1,49.5 174.5,51.4 175.8,53.4 177.2,55.5 178.6,57.6 179.9,59.7 181.3,61.9 182.6,64.2 184.0,66.4 185.4,68.7 186.7,70.9 188.1,73.2 189.4,75.5 190.8,77.8 192.2,80.0 193.5,82.3 194.9,84.5 196.2,86.7 197.6,88.8 199.0,90.9 200.3,93.0 201.7,95.1 203.0,97.1 204.4,99.0 205.8,100.9 207.1,102.7 208.5,104.5 209.8,106.2 211.2,107.9 212.6,109.5 213.9,111.1 215.3,112.6 216.6,114.0 218.0,115.3 219.4,116.7 220.7,117.9 222.1,119.1 223.4,120.2 224.8,121.3 226.2,122.3 227.5,123.3 228.9,124.2 230.2,125.1 231.6,125.9 233.0,126.6 234.3,127.4 235.7,128.0 237.0,128.7 238.4,129.2 239.8,129.8 241.1,130.3 242.5,130.8 243.8,131.2 245.2,131.6 246.6,132.0 247.9,132.4 249.3,132.7 250.6,133.0 252.0,133.3 253.4,133.5 254.7,133.8 256.1,134.0 257.4,134.2 258.8,134.4 260.2,134.5 261.5,134.7 262.9,134.8 264.2,134.9 265.6,135.0 267.0,135.1 268.3,135.2 269.7,135.3 271.0,135.4 272.4,135.5 273.8,135.5 275.1,135.6 276.5,135.6 277.8,135.7 279.2,135.7 280.6,135.7 281.9,135.8 283.3,135.8 284.6,135.8 286.0,135.8"/><line x1="10.0" y1="136.0" x2="290.0" y2="136.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><line x1="150.0" y1="136.0" x2="150.0" y2="31.7" stroke="#888" stroke-width="1.1" stroke-dasharray="4 3" stroke-linecap="round"/><line x1="112.2" y1="133.0" x2="112.2" y2="139.0" stroke="#444" stroke-width="1.3" stroke-linecap="round"/><text x="112.2" y="156.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">40</tspan></text><line x1="150.0" y1="133.0" x2="150.0" y2="139.0" stroke="#444" stroke-width="1.3" stroke-linecap="round"/><text x="150.0" y="156.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">50</tspan></text><line x1="206.7" y1="133.0" x2="206.7" y2="139.0" stroke="#444" stroke-width="1.3" stroke-linecap="round"/><text x="206.7" y="156.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">65</tspan></text></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>\(X\) が \(N(m,\ \sigma^2)\) に従うとき、<b>標準化</b>した \(Z=\dfrac{X-m}{\sigma}\) は \(N(0,\ 1)\) に従う。</p>
+<p>正規分布表は、\(p(u)=P(0\leqq Z\leqq u)\) の値が載っている。左右対称なので、次のように使い分ける。</p>
+<ul><li>0をはさむ範囲：\(P(-a\leqq Z\leqq b)=p(a)+p(b)\)</li><li>片側の裾：\(P(Z\geqq a)=0.5-p(a)\)</li></ul><p>標準正規分布 \(N(0,\ 1)\) に従う \(Z\) について、\(p(u)=P(0\leqq Z\leqq u)\) と書く。よく使う値は次のとおり（問題文にも、必要な値は書いてある）。</p><table class="tbl"><tr><th>\(u\)</th><td>0.5</td><td>1.0</td><td>1.5</td><td>1.64</td><td>1.96</td><td>2.0</td><td>2.33</td><td>2.5</td><td>2.58</td><td>3.0</td></tr>
+<tr><th>\(p(u)\)</th><td>0.1915</td><td>0.3413</td><td>0.4332</td><td>0.4495</td><td>0.4750</td><td>0.4772</td><td>0.4901</td><td>0.4938</td><td>0.4951</td><td>0.4987</td></tr></table><div class="tip"><span class="tip-h">コツ</span><p>必ず<b>グラフをかいて、求める面積に色をぬる</b>。「0より左と右に分ける」「全体の半分 \(0.5\) から引く」のどちらかを、図で決める。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 範囲を標準化する</div><div class="step-b"><p>\(Z=\dfrac{X-50}{10}\)。\(X=40\) のとき \(Z=-1\)、\(X=65\) のとき \(Z=1.5\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> \(Z\) の確率にして、0で分ける</div><div class="step-b"><p>\(P(40\leqq X\leqq65)=P(-1\leqq Z\leqq1.5)=p(1)+p(1.5)\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 表の値を入れる</div><div class="step-b"><p>\(=0.3413+0.4332=0.7745\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ \begin{aligned}P(40\leqq X\leqq65)&=P\left(\frac{40-50}{10}\leqq Z\leqq\frac{65-50}{10}\right)=P(-1\leqq Z\leqq1.5)\\ &=p(1)+p(1.5)=0.3413+0.4332=0.7745\end{aligned} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 3</h2><ol class="prac pf dec"><li><div class="pw"><div class="pt">\(X\sim N(60\), \(5^2)\) のとき、\(P(55\leqq X\leqq72.5)\) を求めよ。ただし \(p(1)=0.3413\), \(p(2.5)=0.4938\)</div></div></li><li><div class="pw"><div class="pt">\(X\sim N(100\), \(15^2)\) のとき、\(P(X\geqq115)\) を求めよ。ただし \(p(1)=0.3413\)</div></div></li><li><div class="pw"><div class="pt">\(X\sim N(20\), \(4^2)\) のとき、\(P(X\leqq14)\) を求めよ。ただし \(p(1.5)=0.4332\)</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-t06.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="t05.html">← 前の例題</a><a href="t07.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/tokei-mondai.pdf">問題編（統計的な推測・全ページ）</a>　<a href="pdf/tokei-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

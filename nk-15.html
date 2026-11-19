@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題5 文章題（長方形の面積の最大値） | 数ラボ</title>
+<meta name="description" content="周の長さが決まった長方形の面積の最大値を、2次関数をつくって平方完成で求める方法を解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-nk-maxmin.html">2次関数の最大・最小</a> ＞ 例題5</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 5</span><span class="lsub">数学I　2次関数　文章題（面積の最大）</span></h1>
+<div class="qbox"><p>周の長さが \(20\,\mathrm{cm}\) の長方形がある。この長方形の面積の最大値と、そのときの縦の長さを求めよ。</p></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>文章題は、次の順に進める。</p>
+<ol class="cond"><li>求めたいものを決める量を、\(x\) とおく（\(x\) の範囲も考える）</li><li>最大・最小を求めたい量を、\(x\) の2次式で表す</li><li>平方完成して、最大値・最小値を求める。そのときの \(x\) が、範囲に入っているか確かめる</li></ol></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 縦の長さを \(x\,\mathrm{cm}\) とおいて、範囲を考える</div><div class="step-b"><p>縦と横の和は \(20\div2=10\) なので、横の長さは \((10-x)\,\mathrm{cm}\)。長さは正なので \(0&lt;x&lt;10\)。</p><div class="fig"><svg viewBox="0 0 300 150" role="img" aria-label="長方形の図"><rect x="70" y="20" width="170" height="90" class="rc-r"/><text x="155.0" y="138" class="gr-l" text-anchor="middle">横 (10−x) cm</text><text x="62" y="70.0" class="gr-l" text-anchor="end">縦 x cm</text></svg></div></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 面積 \(S\) を \(x\) の式で表す</div><div class="step-b"><p>\(S=x(10-x)=-x^2+10x\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 平方完成する</div><div class="step-b"><p>\(S=-(x^2-10x)=-\{(x-5)^2-25\}=-(x-5)^2+25\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> \(x=5\) が範囲 \(0&lt;x&lt;10\) に入っているか確かめて、答える</div><div class="step-b"><p>入っている。\(x=5\) のとき最大値 \(25\)。このとき横も \(10-5=5\)。</p><div class="fig fs"><svg viewBox="0 0 430 300" role="img" aria-label="グラフ"><defs><marker id="gah" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M1,1 L8,4.5 L1,8" fill="none" stroke="#222" stroke-width="1.4"/></marker></defs><line x1="218.0" y1="14" x2="218.0" y2="274" class="gr-g"/><line x1="371.3" y1="14" x2="371.3" y2="274" class="gr-g"/><line x1="34" y1="152.1" x2="402" y2="152.1" class="gr-g"/><line x1="34" y1="30.2" x2="402" y2="30.2" class="gr-g"/><line x1="34" y1="233.4" x2="410" y2="233.4" class="gr-a" marker-end="url(#gah)"/><line x1="64.7" y1="274" x2="64.7" y2="6" class="gr-a" marker-end="url(#gah)"/><text x="410" y="251.4" class="gr-t">x</text><text x="72.7" y="12" class="gr-t">y</text><text x="58.7" y="249.4" class="gr-s" text-anchor="end">O</text><text x="218.0" y="249.4" class="gr-s" text-anchor="middle">5</text><text x="371.3" y="249.4" class="gr-s" text-anchor="middle">10</text><text x="58.7" y="156.1" class="gr-s" text-anchor="end">10</text><text x="58.7" y="34.2" class="gr-s" text-anchor="end">25</text><line x1="218.0" y1="14" x2="218.0" y2="274" class="gr-d"/><polyline points="50.9,271.6 52.4,267.2 53.9,262.8 55.5,258.5 57.0,254.2 58.5,250.0 60.1,245.7 61.6,241.6 63.1,237.5 64.7,233.4 66.2,229.3 67.7,225.3 69.3,221.4 70.8,217.4 72.3,213.6 73.9,209.7 75.4,205.9 76.9,202.2 78.5,198.5 80.0,194.8 81.5,191.1 83.1,187.6 84.6,184.0 86.1,180.5 87.7,177.0 89.2,173.6 90.7,170.2 92.3,166.8 93.8,163.5 95.3,160.2 96.9,157.0 98.4,153.8 99.9,150.7 101.5,147.6 103.0,144.5 104.5,141.5 106.1,138.5 107.6,135.6 109.1,132.6 110.7,129.8 112.2,127.0 113.7,124.2 115.3,121.4 116.8,118.7 118.3,116.1 119.9,113.5 121.4,110.9 122.9,108.3 124.5,105.8 126.0,103.4 127.5,101.0 129.1,98.6 130.6,96.2 132.1,94.0 133.7,91.7 135.2,89.5 136.7,87.3 138.3,85.2 139.8,83.1 141.3,81.0 142.9,79.0 144.4,77.0 145.9,75.1 147.5,73.2 149.0,71.4 150.5,69.6 152.1,67.8 153.6,66.1 155.1,64.4 156.7,62.8 158.2,61.1 159.7,59.6 161.3,58.1 162.8,56.6 164.3,55.1 165.9,53.7 167.4,52.4 168.9,51.0 170.5,49.8 172.0,48.5 173.5,47.3 175.1,46.2 176.6,45.1 178.1,44.0 179.7,42.9 181.2,42.0 182.7,41.0 184.3,40.1 185.8,39.2 187.3,38.4 188.9,37.6 190.4,36.8 191.9,36.1 193.5,35.5 195.0,34.8 196.5,34.2 198.1,33.7 199.6,33.2 201.1,32.7 202.7,32.3 204.2,31.9 205.7,31.6 207.3,31.2 208.8,31.0 210.3,30.8 211.9,30.6 213.4,30.4 214.9,30.3 216.5,30.3 218.0,30.2 219.5,30.3 221.1,30.3 222.6,30.4 224.1,30.6 225.7,30.8 227.2,31.0 228.7,31.2 230.3,31.6 231.8,31.9 233.3,32.3 234.9,32.7 236.4,33.2 237.9,33.7 239.5,34.2 241.0,34.8 242.5,35.5 244.1,36.1 245.6,36.8 247.1,37.6 248.7,38.4 250.2,39.2 251.7,40.1 253.3,41.0 254.8,42.0 256.3,42.9 257.9,44.0 259.4,45.1 260.9,46.2 262.5,47.3 264.0,48.5 265.5,49.8 267.1,51.0 268.6,52.4 270.1,53.7 271.7,55.1 273.2,56.6 274.7,58.1 276.3,59.6 277.8,61.1 279.3,62.8 280.9,64.4 282.4,66.1 283.9,67.8 285.5,69.6 287.0,71.4 288.5,73.2 290.1,75.1 291.6,77.1 293.1,79.0 294.7,81.0 296.2,83.1 297.7,85.2 299.3,87.3 300.8,89.5 302.3,91.7 303.9,94.0 305.4,96.2 306.9,98.6 308.5,101.0 310.0,103.4 311.5,105.8 313.1,108.3 314.6,110.9 316.1,113.4 317.7,116.1 319.2,118.7 320.7,121.4 322.3,124.2 323.8,127.0 325.3,129.8 326.9,132.6 328.4,135.5 329.9,138.5 331.5,141.5 333.0,144.5 334.5,147.6 336.1,150.7 337.6,153.8 339.1,157.0 340.7,160.2 342.2,163.5 343.7,166.8 345.3,170.2 346.8,173.6 348.3,177.0 349.9,180.5 351.4,184.0 352.9,187.6 354.5,191.1 356.0,194.8 357.5,198.5 359.1,202.2 360.6,205.9 362.1,209.7 363.7,213.6 365.2,217.5 366.7,221.4 368.3,225.3 369.8,229.3 371.3,233.4 372.9,237.5 374.4,241.6 375.9,245.7 377.5,249.9 379.0,254.2 380.5,258.5 382.1,262.8 383.6,267.2 385.1,271.6" class="gr-c"/><circle cx="218.0" cy="30.2" r="4.6" class="gr-pt"/><text x="226.0" y="48.2" class="gr-l" text-anchor="start">最大 (5, 25)</text></svg><p class="fig-c">S = −(x−5)²+25 のグラフ（0&lt;x<10）</p></div></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ \begin{aligned}&\text{縦を}\ x\,\mathrm{cm}\ \text{とおくと、}\\&\quad \text{横は}\ (10-x)\,\mathrm{cm}\quad(0&lt;x&lt;10)\\S&=x(10-x)=-x^2+10x\\&=-(x-5)^2+25\\&x=5\ \ \text{は範囲に入るので、}\\&\quad \text{縦}\ 5\,\mathrm{cm}\ \text{のとき、面積の最大値は}\ 25\,\mathrm{cm^2}\end{aligned} \]<p class="ans-mark">答</p></div>
+<section class="tips"><h2>解くコツ・ミス注意</h2><ul><li><b class="tg">コツ</b>最初に「\(x\) の範囲」を必ず書く（長さは正）。</li><li><b class="tg">コツ</b>最後に、最大になる \(x\) が範囲に入っているか確かめる。</li><li class="mi"><b class="tg">ミス注意</b>聞かれていること（最大値と<b>縦の長さ</b>）の片方だけ答える。</li></ul></section>
+<section class="bar navy"><h2>練習問題 5</h2><ol class="prac"><li>周の長さが \(16\,\mathrm{cm}\) の長方形の面積の最大値と、そのときの縦の長さを求めよ。</li><li>和が \(12\) である2つの数の積の最大値と、そのときの2つの数を求めよ。</li><li>周の長さが \(40\,\mathrm{cm}\) の長方形の面積の最大値と、そのときの縦の長さを求めよ。</li></ol></section>
+
+<p><a class="btn" href="kaito-nk-15.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="nk-14.html">← 前の例題</a><a href="nk-16.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/nikan-mondai.pdf">問題編（全ページ）</a>　<a href="pdf/nikan-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

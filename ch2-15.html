@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題15 背理法（√2は無理数） | 数ラボ</title>
+<meta name="description" content="背理法を使って「√2が無理数である」ことを証明する流れを、手順どおりに解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+
+</head>
+<body class="ch2">
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-meidai.html">命題と条件・必要十分条件</a> ＞ 例題15</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 15</span><span class="lsub">第2章　集合と命題　背理法</span></h1>
+<div class="qbox"><p>\(\sqrt2\) が無理数であることを証明せよ。</p></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p><b>背理法</b>の流れ：</p><ol class="cond"><li>示したいこと（結論）が<b>成り立たない</b>と仮定する</li><li>そこから<b>矛盾</b>を導く</li><li>仮定がまちがっていたので、結論は成り立つ、と言う</li></ol><p>有理数は、<b>互いに素な</b>自然数 \(a,\ b\) を用いて \(\dfrac ab\) と表せる（それ以上約分できない分数）。この「互いに素」が、矛盾を作る材料になる。</p><div class="fig"><svg viewBox="0 0 368 70" role="img" aria-label="図"><rect x="10" y="10" width="96" height="50" rx="8" fill="#fff" stroke="#1F4E9A" stroke-width="2"/><text x="58.0" y="32" font-size="11.5" text-anchor="middle">① 結論を否定</text><text x="58.0" y="48" font-size="11.5" text-anchor="middle">して仮定する</text><line x1="110" y1="35" x2="130" y2="35" stroke="#222" stroke-width="2"/><path d="M124,29 L134,35 L124,41" fill="none" stroke="#222" stroke-width="2"/><rect x="136" y="10" width="96" height="50" rx="8" fill="#fff" stroke="#1F4E9A" stroke-width="2"/><text x="184.0" y="32" font-size="11.5" text-anchor="middle">② 矛盾を</text><text x="184.0" y="48" font-size="11.5" text-anchor="middle">導く</text><line x1="236" y1="35" x2="256" y2="35" stroke="#222" stroke-width="2"/><path d="M250,29 L260,35 L250,41" fill="none" stroke="#222" stroke-width="2"/><rect x="262" y="10" width="96" height="50" rx="8" fill="#9fb8e8" stroke="#1F4E9A" stroke-width="2"/><text x="310.0" y="32" font-size="11.5" text-anchor="middle">③ 仮定が誤り</text><text x="310.0" y="48" font-size="11.5" text-anchor="middle">結論は真</text></svg><p class="figcap">背理法の流れ</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 結論を否定して仮定する</div><div class="step-b"><p>\(\sqrt2\) が無理数でない、つまり有理数だと仮定する。互いに素な自然数 \(a,\ b\) を用いて \(\sqrt2=\dfrac ab\) と表せる。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 式を変形する</div><div class="step-b"><p>両辺を2乗して \(2=\dfrac{a^2}{b^2}\)。よって \(a^2=2b^2\)　…①</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> \(a\) が偶数であることを示す</div><div class="step-b"><p>①より \(a^2\) は偶数。「\(n^2\) が偶数ならば \(n\) は偶数」だから（\(n\) が奇数 \(2k+1\) なら \(n^2=2(2k^2+2k)+1\) は奇数となるので対偶が真）、\(a\) は偶数。\(a=2c\)（\(c\) は自然数）とおく。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> \(b\) も偶数であることを示す</div><div class="step-b"><p>①に代入して \(4c^2=2b^2\)、よって \(b^2=2c^2\)。\(b^2\) は偶数なので、同じ理由で \(b\) も偶数。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 5</span> 矛盾を示す</div><div class="step-b"><p>\(a,\ b\) がともに偶数となり、「互いに素」に反する。</p></div></div></section>
+<div class="ktw"><section class="bar navy"><h2>解くコツ</h2><ul class="kt"><li>「無理数である」「存在しない」の証明は、背理法の出番。「互いに素」が矛盾の材料になる。</li><li>\(\sqrt3,\ \sqrt5\) は例題14の結果を使う（先の結果を利用する、いわゆる誘導）。対偶証明は矛盾を作らず、背理法は矛盾を出す、という違い。</li></ul></section></div>
+
+<div class="abox tx"><p class="ah">【答案（テストに書く形）】</p><p>【証明】\(\sqrt2\) が有理数であると仮定すると、互いに素な自然数 \(a,\ b\) を用いて \(\sqrt2=\dfrac ab\) と表せる。両辺を2乗して \(a^2=2b^2\)。よって \(a^2\) は偶数で、\(a\) は偶数。\(a=2c\) とおくと \(4c^2=2b^2\)、すなわち \(b^2=2c^2\) となり、\(b\) も偶数。</p><p>\(a,\ b\) がともに偶数となり、\(a,\ b\) が互いに素であることに矛盾する。よって、\(\sqrt2\) は無理数である。</p><p class="ans-mark">証明終</p></div>
+<section class="bar navy"><h2>練習問題 15</h2><ol class="prac txt"><li>\(\sqrt3\) が無理数であることを証明せよ。</li><li>\(\sqrt5\) が無理数であることを証明せよ。</li><li>\(\sqrt2\) が無理数であることを用いて、\(1+\sqrt2\) が無理数であることを証明せよ。</li></ol></section>
+
+<p><a class="btn" href="kaito-ch2-15.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="ch2-14.html">← 前の例題</a><a href="ch2-kotsu.html">解くコツまとめへ →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/ch2-mondai.pdf">問題編（第2章 全ページ）</a>　<a href="pdf/ch2-bessatsu.pdf">別冊 練習問題の解答（第2章）</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ 掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

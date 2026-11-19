@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題2 小数首位（初めて0でない数字が出る位） | 数ラボ</title>
+<meta name="description" content="常用対数を使って、小さい数の小数第何位に初めて0でない数字が現れるかを求める方法。図つき。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-2.html">数学II</a> ＞ <a href="unit-joyo.html">常用対数</a> ＞ 例題2</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 2</span><span class="lsub">指数関数・対数関数　小数首位</span></h1>
+<div class="qbox qflex"><div class="qt"><p>\(\log_{10}2=0.3010\) とする。\(\left(\dfrac12\right)^{20}\) を小数で表したとき、小数第何位に初めて0でない数字が現れるか。</p></div><div class="fig"><svg viewBox="0 0 300 80" role="img" aria-label="log = -6.02 は -7 と -6 の間" xmlns="http://www.w3.org/2000/svg"><line x1="14.0" y1="44.0" x2="286.0" y2="44.0" stroke="#444" stroke-width="1.6" stroke-linecap="round"/><polygon points="292.0,44.0 284.0,40.5 284.0,47.5" fill="#444"/><line x1="80.0" y1="44.0" x2="220.0" y2="44.0" stroke="#d9822b" stroke-width="5" stroke-linecap="round"/><line x1="80.0" y1="40.0" x2="80.0" y2="48.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="80.0" y="67.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">-7</tspan></text><line x1="220.0" y1="40.0" x2="220.0" y2="48.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="220.0" y="67.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">-6</tspan></text><circle cx="217.2" cy="44.0" r="4.5" fill="#222"/><text x="217.2" y="33.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">-6.02</tspan></text></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>小数第 \(n\) 位に初めて0でない数字が現れることは、次のように言いかえられる。</p>
+\[ N\ \text{の初めて0でない数字が小数第}\ n\ \text{位}\ \Longleftrightarrow\ 10^{-n}\leqq N<10^{-(n-1)}\ \Longleftrightarrow\ -n\leqq\log_{10}N<-(n-1) \]
+<p>\(\log_{10}N\) が負の数になるので、<b>整数部分を、小さいほう（負の数で切り下げ）で読む</b>のがポイント。</p><div class="tip"><span class="tip-h">コツ</span><p>例：\(\log_{10}N=-6.02\) なら \(-7\leqq-6.02<-6\)。小さいほうの \(-7\) を使って、小数第7位。「\(-6\)」と答えるミスが多い。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 常用対数をとる</div><div class="step-b"><p>\(\log_{10}\left(\dfrac12\right)^{20}=-20\log_{10}2=-20\times0.3010=-6.02\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 不等式にして、位を読む</div><div class="step-b"><p>\(-7<-6.02<-6\) より \(10^{-7}<\left(\dfrac12\right)^{20}<10^{-6}\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 位を答える</div><div class="step-b"><p>\(10^{-7}=0.0000001\) は小数第7位に1がある数。よって小数第7位。</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ \begin{aligned}\log_{10}\left(\tfrac12\right)^{20}&=-20\times0.3010=-6.02\\ -7&<-6.02<-6\\ \therefore\ 10^{-7}&<\left(\tfrac12\right)^{20}<10^{-6}\end{aligned}\quad\text{よって小数第7位} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 2</h2><ol class="prac pf dec"><li><div class="pw"><div class="pt">\(\log_{10}2=0.3010\) とする。\(\left(\dfrac12\right)^{30}\) を小数で表したとき、小数第何位に初めて0でない数字が現れるか。</div></div></li><li><div class="pw"><div class="pt">\(\log_{10}3=0.4771\) とする。\(\left(\dfrac13\right)^{10}\) を小数で表したとき、小数第何位に初めて0でない数字が現れるか。</div></div></li><li><div class="pw"><div class="pt">\(\log_{10}2=0.3010\), \(\log_{10}3=0.4771\) とする。\(\left(\dfrac16\right)^{12}\) を小数で表したとき、小数第何位に初めて0でない数字が現れるか。</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-s14.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="s13.html">← 前の例題</a><a href="s15.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/shitai-mondai.pdf">問題編（指数関数・対数関数・全ページ）</a>　<a href="pdf/shitai-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

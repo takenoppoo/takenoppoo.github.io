@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題7 仮説検定③（片側検定） | 数ラボ</title>
+<meta name="description" content="「高くなった」「低くなった」を調べる片側検定の手順。図つき。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-B.html">数学B</a> ＞ <a href="unit-suitei.html">推定と仮説検定</a> ＞ 例題7</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 7</span><span class="lsub">統計的な推測　仮説検定（片側）</span></h1>
+<div class="qbox qflex"><div class="qt"><p>ある病気の従来の薬の治癒率は \(40\%\) である。新薬を100人に使ったところ、\(50\) 人が治った。新薬のほうが治癒率が高いといえるか。有意水準 \(5\%\) で検定せよ。ただし、\(P(Z\geqq1.64)\fallingdotseq0.05\)、\(\sqrt6=2.449\) とする。</p></div><div class="fig"><svg viewBox="0 0 300 170" role="img" aria-label="片側5%の棄却域と z=2.04" xmlns="http://www.w3.org/2000/svg"><polygon points="212.0,136.0 212.0,108.8 212.9,109.9 213.8,110.9 214.7,112.0 215.7,113.0 216.6,113.9 217.5,114.9 218.4,115.8 219.4,116.7 220.3,117.5 221.2,118.3 222.1,119.1 223.1,119.9 224.0,120.7 224.9,121.4 225.8,122.1 226.8,122.8 227.7,123.4 228.6,124.0 229.5,124.6 230.5,125.2 231.4,125.8 232.3,126.3 233.2,126.8 234.2,127.3 235.1,127.7 236.0,128.2 236.9,128.6 237.9,129.0 238.8,129.4 239.7,129.8 240.6,130.1 241.6,130.5 242.5,130.8 243.4,131.1 244.4,131.4 245.3,131.7 246.2,131.9 247.1,132.2 248.1,132.4 249.0,132.6 249.9,132.8 250.8,133.0 251.8,133.2 252.7,133.4 253.6,133.6 254.5,133.7 255.5,133.9 256.4,134.0 257.3,134.2 258.2,134.3 259.2,134.4 260.1,134.5 261.0,134.6 261.9,134.7 262.9,134.8 263.8,134.9 264.7,135.0 265.6,135.0 266.6,135.1 267.5,135.2 268.4,135.2 269.3,135.3 270.3,135.3 271.2,135.4 272.1,135.4 273.0,135.5 274.0,135.5 274.9,135.6 275.8,135.6 276.7,135.6 277.7,135.7 278.6,135.7 279.5,135.7 280.4,135.7 281.4,135.8 282.3,135.8 283.2,135.8 284.1,135.8 285.1,135.8 286.0,135.8 286.0,136.0" fill="#d9822b" fill-opacity="0.45" stroke="none"/><polyline fill="none" stroke="#1F4E9A" stroke-width="2.3" points="14.0,135.8 15.4,135.8 16.7,135.8 18.1,135.8 19.4,135.7 20.8,135.7 22.2,135.7 23.5,135.6 24.9,135.6 26.2,135.5 27.6,135.5 29.0,135.4 30.3,135.3 31.7,135.2 33.0,135.1 34.4,135.0 35.8,134.9 37.1,134.8 38.5,134.7 39.8,134.5 41.2,134.4 42.6,134.2 43.9,134.0 45.3,133.8 46.6,133.5 48.0,133.3 49.4,133.0 50.7,132.7 52.1,132.4 53.4,132.0 54.8,131.6 56.2,131.2 57.5,130.8 58.9,130.3 60.2,129.8 61.6,129.2 63.0,128.7 64.3,128.0 65.7,127.4 67.0,126.6 68.4,125.9 69.8,125.1 71.1,124.2 72.5,123.3 73.8,122.3 75.2,121.3 76.6,120.2 77.9,119.1 79.3,117.9 80.6,116.7 82.0,115.3 83.4,114.0 84.7,112.6 86.1,111.1 87.4,109.5 88.8,107.9 90.2,106.2 91.5,104.5 92.9,102.7 94.2,100.9 95.6,99.0 97.0,97.1 98.3,95.1 99.7,93.0 101.0,90.9 102.4,88.8 103.8,86.7 105.1,84.5 106.5,82.3 107.8,80.0 109.2,77.8 110.6,75.5 111.9,73.2 113.3,70.9 114.6,68.7 116.0,66.4 117.4,64.2 118.7,61.9 120.1,59.7 121.4,57.6 122.8,55.5 124.2,53.4 125.5,51.4 126.9,49.5 128.2,47.6 129.6,45.8 131.0,44.1 132.3,42.5 133.7,40.9 135.0,39.5 136.4,38.2 137.8,37.0 139.1,35.9 140.5,34.9 141.8,34.1 143.2,33.3 144.6,32.7 145.9,32.3 147.3,31.9 148.6,31.7 150.0,31.7 151.4,31.7 152.7,31.9 154.1,32.3 155.4,32.7 156.8,33.3 158.2,34.1 159.5,34.9 160.9,35.9 162.2,37.0 163.6,38.2 165.0,39.5 166.3,40.9 167.7,42.5 169.0,44.1 170.4,45.8 171.8,47.6 173.1,49.5 174.5,51.4 175.8,53.4 177.2,55.5 178.6,57.6 179.9,59.7 181.3,61.9 182.6,64.2 184.0,66.4 185.4,68.7 186.7,70.9 188.1,73.2 189.4,75.5 190.8,77.8 192.2,80.0 193.5,82.3 194.9,84.5 196.2,86.7 197.6,88.8 199.0,90.9 200.3,93.0 201.7,95.1 203.0,97.1 204.4,99.0 205.8,100.9 207.1,102.7 208.5,104.5 209.8,106.2 211.2,107.9 212.6,109.5 213.9,111.1 215.3,112.6 216.6,114.0 218.0,115.3 219.4,116.7 220.7,117.9 222.1,119.1 223.4,120.2 224.8,121.3 226.2,122.3 227.5,123.3 228.9,124.2 230.2,125.1 231.6,125.9 233.0,126.6 234.3,127.4 235.7,128.0 237.0,128.7 238.4,129.2 239.8,129.8 241.1,130.3 242.5,130.8 243.8,131.2 245.2,131.6 246.6,132.0 247.9,132.4 249.3,132.7 250.6,133.0 252.0,133.3 253.4,133.5 254.7,133.8 256.1,134.0 257.4,134.2 258.8,134.4 260.2,134.5 261.5,134.7 262.9,134.8 264.2,134.9 265.6,135.0 267.0,135.1 268.3,135.2 269.7,135.3 271.0,135.4 272.4,135.5 273.8,135.5 275.1,135.6 276.5,135.6 277.8,135.7 279.2,135.7 280.6,135.7 281.9,135.8 283.3,135.8 284.6,135.8 286.0,135.8"/><line x1="10.0" y1="136.0" x2="290.0" y2="136.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><line x1="150.0" y1="136.0" x2="150.0" y2="31.7" stroke="#888" stroke-width="1.1" stroke-dasharray="4 3" stroke-linecap="round"/><line x1="150.0" y1="133.0" x2="150.0" y2="139.0" stroke="#444" stroke-width="1.3" stroke-linecap="round"/><text x="150.0" y="156.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">0</tspan></text><line x1="212.0" y1="133.0" x2="212.0" y2="139.0" stroke="#444" stroke-width="1.3" stroke-linecap="round"/><text x="212.0" y="156.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">1.64</tspan></text><line x1="227.1" y1="136.0" x2="227.1" y2="101.0" stroke="#c0283c" stroke-width="2.0" stroke-linecap="round"/><circle cx="227.1" cy="101.0" r="3.5" fill="#c0283c"/></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>「高くなった」「低くなった」と、<b>片方向だけ</b>を調べるときは<b>片側検定</b>。棄却域は、片側の裾だけ。</p>
+<ul><li>有意水準 \(5\%\) の片側検定：\(Z\geqq1.64\)（「低くなった」なら \(Z\leqq-1.64\)）</li><li>両側検定（例題5・6）：\(|Z|\geqq1.96\)</li></ul>
+<p>「変わったか」なら両側、「高いか／低いか」なら片側、と<b>問題文の言い方で決める</b>。</p><div class="tip"><span class="tip-h">コツ</span><p>片側検定は、同じ有意水準でも棄却域が広い（\(1.64<1.96\)）ので、結論が出やすい。「高いといえるか」と聞かれているのに両側で解かないこと。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 帰無仮説を立てる</div><div class="step-b"><p>\(H_0\)：治癒率は変わらない（\(p=0.4\)）。対立仮説：\(p>0.4\)（片側）。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> \(H_0\) のもとでの分布を決める</div><div class="step-b"><p>治った人数 \(X\) は \(B(100,\ 0.4)\)。\(m=40,\ \sigma=\sqrt{100\cdot0.4\cdot0.6}=\sqrt{24}=2\sqrt6=4.898\)。近似的に \(N(40,\ 4.898^2)\)。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 棄却域を決めて、標準化する</div><div class="step-b"><p>棄却域は \(Z\geqq1.64\)。\(Z=\dfrac{50-40}{4.898}=2.04\cdots\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> 結論を書く</div><div class="step-b"><p>\(2.04>1.64\) で棄却域に入る。\(H_0\) を棄却し、新薬のほうが治癒率が高いといえる。</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ \begin{aligned}&H_0:\ p=0.4\ \Rightarrow\ X\sim N(40,\ 24)\ \ (\sigma=2\sqrt6\fallingdotseq4.898)\\ &Z=\frac{50-40}{4.898}=2.04>1.64\end{aligned}\quad\text{よって、新薬のほうが高いといえる} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 7</h2><ol class="prac pf dec"><li><div class="pw"><div class="pt">硬貨を100回投げて、表が60回出た。表が出やすいといえるか。有意水準 \(5\%\) の片側検定（\(Z\geqq1.64\)）で検定せよ。</div></div></li><li><div class="pw"><div class="pt">硬貨を100回投げて、表が57回出た。表が出やすいといえるか。有意水準 \(5\%\) の片側検定（\(Z\geqq1.64\)）で検定せよ。</div></div></li><li><div class="pw"><div class="pt">不良率が \(10\%\) の製品を、改良後に400個調べたところ、不良品が28個あった。不良率が下がったといえるか。有意水準 \(5\%\) の片側検定（\(Z\leqq-1.64\)）で検定せよ。</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-t15.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="t14.html">← 前の例題</a><a href="tokei-shomatsu.html">章末問題へ →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/tokei-mondai.pdf">問題編（統計的な推測・全ページ）</a>　<a href="pdf/tokei-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

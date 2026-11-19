@@ -1,0 +1,50 @@
+
+/* ---- 図形と計量 ---- */
+.fig{text-align:center;margin:6px auto}
+.fig svg{width:100%;max-width:340px;height:auto;display:block;margin:0 auto}
+.qbox .fig svg{max-width:300px}
+.qflex{display:flex;flex-wrap:wrap;align-items:center;gap:4px 18px}
+.qflex .qt{flex:1 1 300px}
+.qflex .fig{flex:0 0 270px;margin:0}
+.qflex .fig svg{max-width:270px}
+.tip{border:1.5px dashed var(--grn);border-radius:10px;background:#f3faf6;padding:6px 14px;margin:10px 0 2px;font-size:.95rem}
+.tip p{margin:2px 0}
+.tip-h{display:inline-block;background:var(--grn);color:#fff;font-weight:700;font-size:.8rem;padding:1px 9px;border-radius:10px;margin-right:8px}
+.tip{position:relative}
+.tip .tip-h{margin-bottom:2px}
+.tip p:first-of-type{display:inline}
+.prac.pf{list-style:none}
+.prac.pf li{margin:10px 0}
+.prac .pw{display:flex;flex-wrap:wrap;align-items:center;gap:4px 18px}
+.prac .pt{flex:1 1 280px;font-size:1.12rem}
+.prac .pw .fig{flex:0 0 210px;margin:0}
+.prac .pw .fig svg{max-width:210px}
+.pq .fig{margin:4px 0}
+.prac.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px 14px;list-style:none;padding-left:0;counter-reset:pi}
+.prac.pgrid li{counter-increment:pi;margin:0;background:#fff;border:1px solid #d5dbe8;border-radius:8px;padding:6px 10px 6px 34px;position:relative}
+.prac.pgrid li::before{content:counter(pi) ".";position:absolute;left:9px;top:6px;font-weight:700}
+.prac.pgrid .pw{display:block}
+.prac.pgrid .pt{font-size:1rem}
+.prac.pgrid .pw .fig{margin:4px auto 0}
+.prac.pgrid .pw .fig svg{max-width:100%}
+.refs{font-size:.9rem}
+.refs li{margin:4px 0}
+.ans-steps{margin:2px 0 6px}
+.srow{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}
+.srow .fig{flex:0 0 220px;margin:0}
+.srow .fig svg{max-width:220px}
+.srow .stx{flex:1 1 260px}
+@media print{
+ .tip{font-size:12px;padding:3px 10px;margin:6px 0 0}
+ .qflex .fig svg{max-width:235px}
+ .fig svg{max-width:260px}
+ .prac .pw .fig svg{max-width:200px}
+ .prac .pw .fig{flex:0 0 200px}
+}
+.abox{padding-right:52px}
+
+/* 数式の途中（「=」の直後など）で改行しない */
+.pt .katex-html,.prac .katex-html,.ptxt .katex-html{display:inline-block;max-width:92%;vertical-align:baseline}
+
+/* 小問(1)(2)…を含む練習問題は、問題番号を「1.」「2.」にする */
+.prac.dec li::before{content:counter(pr) "."}

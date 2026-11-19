@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題1 常用対数と桁数 | 数ラボ</title>
+<meta name="description" content="常用対数を使って、大きな数の桁数を求める方法。図つき。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-2.html">数学II</a> ＞ <a href="unit-joyo.html">常用対数</a> ＞ 例題1</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 1</span><span class="lsub">指数関数・対数関数　常用対数と桁数</span></h1>
+<div class="qbox qflex"><div class="qt"><p>\(\log_{10}2=0.3010\) とする。\(2^{30}\) は何桁の整数か。</p></div><div class="fig"><svg viewBox="0 0 300 80" role="img" aria-label="log 2^30 = 9.03 は 9 と 10 の間" xmlns="http://www.w3.org/2000/svg"><line x1="14.0" y1="44.0" x2="286.0" y2="44.0" stroke="#444" stroke-width="1.6" stroke-linecap="round"/><polygon points="292.0,44.0 284.0,40.5 284.0,47.5" fill="#444"/><line x1="71.3" y1="44.0" x2="228.7" y2="44.0" stroke="#d9822b" stroke-width="5" stroke-linecap="round"/><line x1="71.3" y1="40.0" x2="71.3" y2="48.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="71.3" y="67.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">9</tspan></text><line x1="228.7" y1="40.0" x2="228.7" y2="48.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="228.7" y="67.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">10</tspan></text><circle cx="76.0" cy="44.0" r="4.5" fill="#222"/><text x="76.0" y="33.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">9.03</tspan></text></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>底が10の対数を<b>常用対数</b>という。整数 \(N\) が \(n\) 桁であることは、次のように言いかえられる。</p>
+\[ N\ \text{が}\ n\ \text{桁}\ \Longleftrightarrow\ 10^{n-1}\leqq N<10^n\ \Longleftrightarrow\ n-1\leqq\log_{10}N<n \]
+<p>\(\log_{10}N\) を計算して、<b>整数部分に1を足した数が桁数</b>になる。</p><div class="tip"><span class="tip-h">コツ</span><p>例：\(\log_{10}N=9.03\) なら、\(9\leqq9.03<10\) なので \(10\) 桁。整数部分の \(9\) に \(1\) を足す。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> \(2^{30}\) の常用対数をとる</div><div class="step-b"><p>\(\log_{10}2^{30}=30\log_{10}2=30\times0.3010=9.03\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 不等式にして、桁数を読む</div><div class="step-b"><p>\(9<9.03<10\) より \(10^9<2^{30}<10^{10}\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 桁数を答える</div><div class="step-b"><p>\(10^9\) は10桁の数の最小なので、\(2^{30}\) は10桁。</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ \begin{aligned}\log_{10}2^{30}&=30\times0.3010=9.03\\ 9&<\log_{10}2^{30}<10\\ \therefore\ 10^9&<2^{30}<10^{10}\end{aligned}\quad\text{よって}\ 10\ \text{桁} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 1</h2><ol class="prac pf dec"><li><div class="pw"><div class="pt">\(\log_{10}2=0.3010\) とする。\(2^{50}\) は何桁の整数か。</div></div></li><li><div class="pw"><div class="pt">\(\log_{10}3=0.4771\) とする。\(3^{20}\) は何桁の整数か。</div></div></li><li><div class="pw"><div class="pt">\(\log_{10}2=0.3010\), \(\log_{10}3=0.4771\) とする。\(6^{15}\) は何桁の整数か。</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-s13.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="s12.html">← 前の例題</a><a href="s14.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/shitai-mondai.pdf">問題編（指数関数・対数関数・全ページ）</a>　<a href="pdf/shitai-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

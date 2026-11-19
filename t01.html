@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題1 確率変数の期待値・分散・標準偏差 | 数ラボ</title>
+<meta name="description" content="確率分布の表から、期待値 E(X)、分散 V(X)、標準偏差 σ(X) を求める手順を解説。図つき。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-B.html">数学B</a> ＞ <a href="unit-kakuritsu.html">確率分布</a> ＞ 例題1</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 1</span><span class="lsub">統計的な推測　確率変数の期待値・分散</span></h1>
+<div class="qbox qflex"><div class="qt"><p>確率変数 \(X\) の確率分布が次の表のとき、\(E(X)\), \(V(X)\), \(\sigma(X)\) を求めよ。</p><table class="tbl"><tr><th>\(X\)</th><th>1</th><th>2</th><th>3</th></tr><tr><th>\(P\)</th><td>\(\frac12\)</td><td>\(\frac13\)</td><td>\(\frac16\)</td></tr></table></div><div class="fig"><svg viewBox="0 0 240 180" role="img" aria-label="Xの確率分布" xmlns="http://www.w3.org/2000/svg"><line x1="34.0" y1="150.0" x2="232.0" y2="150.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><line x1="38.0" y1="154.0" x2="38.0" y2="14.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="230.0" y="169.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">X</tspan></text><text x="36.0" y="15.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">P</tspan></text><rect x="46.8" y="38.1" width="45.1" height="111.9" fill="#1F4E9A" fill-opacity="0.55" stroke="#1F4E9A" stroke-width="1.3"/><text x="69.3" y="169.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">1</tspan></text><text x="69.3" y="35.3" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">1/2</tspan></text><rect x="109.4" y="75.4" width="45.1" height="74.6" fill="#1F4E9A" fill-opacity="0.55" stroke="#1F4E9A" stroke-width="1.3"/><text x="132.0" y="169.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">2</tspan></text><text x="132.0" y="72.5" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">1/3</tspan></text><rect x="172.1" y="112.7" width="45.1" height="37.3" fill="#1F4E9A" fill-opacity="0.55" stroke="#1F4E9A" stroke-width="1.3"/><text x="194.7" y="169.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">3</tspan></text><text x="194.7" y="109.8" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">1/6</tspan></text></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>確率変数 \(X\) が値 \(x_1,\ x_2,\ \cdots,\ x_n\) をとる確率が \(p_1,\ p_2,\ \cdots,\ p_n\) のとき</p>
+\[ E(X)=\sum_{i=1}^nx_ip_i,\qquad V(X)=E(X^2)-\{E(X)\}^2,\qquad \sigma(X)=\sqrt{V(X)} \]
+<p>手順は、<b>① \(E(X)\) → ② \(E(X^2)\) → ③ \(V(X)\)</b> の順。\(E(X^2)\) は、値を2乗してから確率をかけて足す。</p><div class="tip"><span class="tip-h">コツ</span><p>分散の公式 \(V(X)=E(X^2)-\{E(X)\}^2\) は「2乗の平均 − 平均の2乗」。確率の合計が \(1\) になっているかを先に確かめる（\(\frac12+\frac13+\frac16=1\)）。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 期待値 \(E(X)\) を求める</div><div class="step-b"><p>\(E(X)=1\cdot\dfrac12+2\cdot\dfrac13+3\cdot\dfrac16=\dfrac12+\dfrac23+\dfrac12=\dfrac53\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> \(E(X^2)\) を求める</div><div class="step-b"><p>\(E(X^2)=1^2\cdot\dfrac12+2^2\cdot\dfrac13+3^2\cdot\dfrac16=\dfrac12+\dfrac43+\dfrac32=\dfrac{10}3\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 分散 \(V(X)\) を求める</div><div class="step-b"><p>\(V(X)=\dfrac{10}3-\left(\dfrac53\right)^2=\dfrac{30}9-\dfrac{25}9=\dfrac59\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> 標準偏差 \(\sigma(X)\) を求める</div><div class="step-b"><p>\(\sigma(X)=\sqrt{\dfrac59}=\dfrac{\sqrt5}3\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ E(X)=\frac53,\qquad V(X)=\frac59,\qquad \sigma(X)=\frac{\sqrt5}{3} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 1</h2><ol class="prac pf dec"><li><div class="pw"><div class="pt">\(X\) が \(1\), \(2\), \(3\), \(4\) の値をとる確率が、順に \(\dfrac1{10}\), \(\dfrac2{10}\), \(\dfrac3{10}\), \(\dfrac4{10}\) のとき、\(E(X)\), \(V(X)\), \(\sigma(X)\) を求めよ。</div></div></li><li><div class="pw"><div class="pt">\(X\) が \(0\), \(1\), \(2\), \(3\) の値をとる確率が、順に \(\dfrac18\), \(\dfrac38\), \(\dfrac38\), \(\dfrac18\) のとき、\(E(X)\), \(V(X)\), \(\sigma(X)\) を求めよ。</div></div></li><li><div class="pw"><div class="pt">\(X\) が \(-1\), \(0\), \(1\), \(2\) の値をとる確率が、どれも \(\dfrac14\) のとき、\(E(X)\), \(V(X)\), \(\sigma(X)\) を求めよ。</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-t01.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="unit-kakuritsu.html">← 目次</a><a href="t02.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/tokei-mondai.pdf">問題編（統計的な推測・全ページ）</a>　<a href="pdf/tokei-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

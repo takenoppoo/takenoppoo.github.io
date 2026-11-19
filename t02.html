@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題2 aX＋b の期待値・分散 | 数ラボ</title>
+<meta name="description" content="確率変数 X を1次式 aX+b に変えたときの期待値・分散・標準偏差の公式を使う手順。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-B.html">数学B</a> ＞ <a href="unit-kakuritsu.html">確率分布</a> ＞ 例題2</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 2</span><span class="lsub">統計的な推測　aX+b の期待値・分散</span></h1>
+<div class="qbox"><div class="qt"><p>\(E(X)=5\), \(V(X)=4\) のとき、\(Y=3X-2\) について \(E(Y)\), \(V(Y)\), \(\sigma(Y)\) を求めよ。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>\(a,\ b\) を定数とするとき、</p>
+\[ E(aX+b)=aE(X)+b,\qquad V(aX+b)=a^2V(X),\qquad \sigma(aX+b)=|a|\,\sigma(X) \]
+<p><b>期待値は \(a\) 倍して \(b\) を足す。分散は \(a^2\) 倍で、\(b\) は関係しない。</b>標準偏差は、分散の平方根なので \(|a|\) 倍。</p><div class="tip"><span class="tip-h">コツ</span><p>\(b\) を足しても、グラフ全体が横に動くだけで、ばらつきは変わらない。だから分散に \(b\) は出てこない。\(a\) が負でも、分散は \(a^2\) で必ず正。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 公式にあてはめる準備をする</div><div class="step-b"><p>\(a=3,\ b=-2\)。\(E(X)=5,\ V(X)=4\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 期待値を求める</div><div class="step-b"><p>\(E(Y)=3\cdot5-2=13\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 分散を求める</div><div class="step-b"><p>\(V(Y)=3^2\cdot4=36\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> 標準偏差を求める</div><div class="step-b"><p>\(\sigma(Y)=\sqrt{36}=6\)（または \(|3|\cdot\sigma(X)=3\cdot2\)）</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ E(Y)=13,\qquad V(Y)=36,\qquad \sigma(Y)=6 \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 2</h2><ol class="prac pf dec"><li><div class="pw"><div class="pt">\(E(X)=10\), \(V(X)=9\) のとき、\(Y=2X+1\) の \(E(Y)\), \(V(Y)\), \(\sigma(Y)\) を求めよ。</div></div></li><li><div class="pw"><div class="pt">\(E(X)=-2\), \(V(X)=\dfrac14\) のとき、\(Y=4X-3\) の \(E(Y)\), \(V(Y)\), \(\sigma(Y)\) を求めよ。</div></div></li><li><div class="pw"><div class="pt">\(E(X)=6\), \(V(X)=16\) のとき、\(Y=\dfrac{X-6}4\) の \(E(Y)\), \(V(Y)\), \(\sigma(Y)\) を求めよ。</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-t02.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="t01.html">← 前の例題</a><a href="t03.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/tokei-mondai.pdf">問題編（統計的な推測・全ページ）</a>　<a href="pdf/tokei-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

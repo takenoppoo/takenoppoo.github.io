@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題3 和の期待値・独立な確率変数の分散 | 数ラボ</title>
+<meta name="description" content="2つの確率変数の和・1次結合の期待値と、独立のときの分散を求める手順。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-B.html">数学B</a> ＞ <a href="unit-kakuritsu.html">確率分布</a> ＞ 例題3</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 3</span><span class="lsub">統計的な推測　和の期待値と独立な確率変数の分散</span></h1>
+<div class="qbox"><div class="qt"><p>確率変数 \(X\), \(Y\) は独立で、\(E(X)=3\), \(V(X)=2\), \(E(Y)=4\), \(V(Y)=5\) とする。\(Z=2X+3Y\) について、\(E(Z)\), \(V(Z)\), \(\sigma(Z)\) を求めよ。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>期待値は、独立でなくても成り立つ。分散は、<b>\(X,\ Y\) が独立のときだけ</b>足してよい。</p>
+\[ E(aX+bY)=aE(X)+bE(Y),\qquad V(aX+bY)=a^2V(X)+b^2V(Y)\ \ (X,\ Y\ \text{が独立}) \]
+<p>引き算 \(X-Y\) のときも、分散は<b>足す</b>（\(b^2=(-1)^2=1\)）。</p><div class="tip"><span class="tip-h">コツ</span><p>「期待値は \(a,\ b\) をそのまま、分散は \(a^2,\ b^2\)」とそろえて覚える。\(V(X-Y)=V(X)+V(Y)\) で、引き算にならないことに注意。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 期待値を求める</div><div class="step-b"><p>\(E(Z)=2E(X)+3E(Y)=2\cdot3+3\cdot4=18\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 独立なので、分散を求める</div><div class="step-b"><p>\(V(Z)=2^2V(X)+3^2V(Y)=4\cdot2+9\cdot5=8+45=53\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 標準偏差を求める</div><div class="step-b"><p>\(\sigma(Z)=\sqrt{53}\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ E(Z)=18,\qquad V(Z)=53,\qquad \sigma(Z)=\sqrt{53} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 3</h2><ol class="prac pf dec"><li><div class="pw"><div class="pt">\(X\), \(Y\) は独立で、\(E(X)=2\), \(V(X)=3\), \(E(Y)=-1\), \(V(Y)=1\) のとき、\(Z=X+2Y\) の \(E(Z)\), \(V(Z)\) を求めよ。</div></div></li><li><div class="pw"><div class="pt">\(X\), \(Y\) は独立で、\(E(X)=2\), \(V(X)=3\), \(E(Y)=-1\), \(V(Y)=1\) のとき、\(Z=3X-Y\) の \(E(Z)\), \(V(Z)\) を求めよ。</div></div></li><li><div class="pw"><div class="pt">大小2個のさいころを投げ、出る目を \(X\), \(Y\) とする。1個のさいころの目は \(E=\dfrac72\), \(V=\dfrac{35}{12}\)。和 \(S=X+Y\) の \(E(S)\), \(V(S)\) を求めよ。</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-t03.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="t02.html">← 前の例題</a><a href="t04.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/tokei-mondai.pdf">問題編（統計的な推測・全ページ）</a>　<a href="pdf/tokei-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

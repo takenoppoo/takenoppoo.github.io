@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題5 二項分布の正規近似 | 数ラボ</title>
+<meta name="description" content="n が大きい二項分布 B(n,p) を、正規分布 N(np, npq) で近似して確率を求める手順。図つき。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-B.html">数学B</a> ＞ <a href="unit-nikou.html">二項分布・正規分布</a> ＞ 例題5</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 5</span><span class="lsub">統計的な推測　二項分布の正規近似</span></h1>
+<div class="qbox qflex"><div class="qt"><p>1個のさいころを720回投げて、1の目が出る回数を \(X\) とする。1の目が130回以上出る確率を、正規分布で近似して求めよ。ただし \(p(1)=0.3413\) とする。</p></div><div class="fig"><svg viewBox="0 0 300 170" role="img" aria-label="N(120, 10²) で P(X≧130)" xmlns="http://www.w3.org/2000/svg"><polygon points="187.8,136.0 187.8,72.7 189.0,74.8 190.2,76.8 191.5,78.9 192.7,80.9 193.9,82.9 195.1,84.9 196.4,86.9 197.6,88.8 198.8,90.7 200.1,92.6 201.3,94.5 202.5,96.3 203.7,98.1 205.0,99.8 206.2,101.5 207.4,103.1 208.7,104.7 209.9,106.3 211.1,107.8 212.3,109.3 213.6,110.7 214.8,112.0 216.0,113.3 217.2,114.6 218.5,115.8 219.7,117.0 220.9,118.1 222.2,119.2 223.4,120.2 224.6,121.2 225.8,122.1 227.1,123.0 228.3,123.8 229.5,124.6 230.8,125.4 232.0,126.1 233.2,126.8 234.4,127.4 235.7,128.0 236.9,128.6 238.1,129.1 239.3,129.6 240.6,130.1 241.8,130.6 243.0,131.0 244.3,131.4 245.5,131.7 246.7,132.1 247.9,132.4 249.2,132.7 250.4,132.9 251.6,133.2 252.8,133.4 254.1,133.7 255.3,133.9 256.5,134.0 257.8,134.2 259.0,134.4 260.2,134.5 261.4,134.7 262.7,134.8 263.9,134.9 265.1,135.0 266.4,135.1 267.6,135.2 268.8,135.3 270.0,135.3 271.3,135.4 272.5,135.5 273.7,135.5 274.9,135.6 276.2,135.6 277.4,135.6 278.6,135.7 279.9,135.7 281.1,135.7 282.3,135.8 283.5,135.8 284.8,135.8 286.0,135.8 286.0,136.0" fill="#d9822b" fill-opacity="0.45" stroke="none"/><polyline fill="none" stroke="#1F4E9A" stroke-width="2.3" points="14.0,135.8 15.4,135.8 16.7,135.8 18.1,135.8 19.4,135.7 20.8,135.7 22.2,135.7 23.5,135.6 24.9,135.6 26.2,135.5 27.6,135.5 29.0,135.4 30.3,135.3 31.7,135.2 33.0,135.1 34.4,135.0 35.8,134.9 37.1,134.8 38.5,134.7 39.8,134.5 41.2,134.4 42.6,134.2 43.9,134.0 45.3,133.8 46.6,133.5 48.0,133.3 49.4,133.0 50.7,132.7 52.1,132.4 53.4,132.0 54.8,131.6 56.2,131.2 57.5,130.8 58.9,130.3 60.2,129.8 61.6,129.2 63.0,128.7 64.3,128.0 65.7,127.4 67.0,126.6 68.4,125.9 69.8,125.1 71.1,124.2 72.5,123.3 73.8,122.3 75.2,121.3 76.6,120.2 77.9,119.1 79.3,117.9 80.6,116.7 82.0,115.3 83.4,114.0 84.7,112.6 86.1,111.1 87.4,109.5 88.8,107.9 90.2,106.2 91.5,104.5 92.9,102.7 94.2,100.9 95.6,99.0 97.0,97.1 98.3,95.1 99.7,93.0 101.0,90.9 102.4,88.8 103.8,86.7 105.1,84.5 106.5,82.3 107.8,80.0 109.2,77.8 110.6,75.5 111.9,73.2 113.3,70.9 114.6,68.7 116.0,66.4 117.4,64.2 118.7,61.9 120.1,59.7 121.4,57.6 122.8,55.5 124.2,53.4 125.5,51.4 126.9,49.5 128.2,47.6 129.6,45.8 131.0,44.1 132.3,42.5 133.7,40.9 135.0,39.5 136.4,38.2 137.8,37.0 139.1,35.9 140.5,34.9 141.8,34.1 143.2,33.3 144.6,32.7 145.9,32.3 147.3,31.9 148.6,31.7 150.0,31.7 151.4,31.7 152.7,31.9 154.1,32.3 155.4,32.7 156.8,33.3 158.2,34.1 159.5,34.9 160.9,35.9 162.2,37.0 163.6,38.2 165.0,39.5 166.3,40.9 167.7,42.5 169.0,44.1 170.4,45.8 171.8,47.6 173.1,49.5 174.5,51.4 175.8,53.4 177.2,55.5 178.6,57.6 179.9,59.7 181.3,61.9 182.6,64.2 184.0,66.4 185.4,68.7 186.7,70.9 188.1,73.2 189.4,75.5 190.8,77.8 192.2,80.0 193.5,82.3 194.9,84.5 196.2,86.7 197.6,88.8 199.0,90.9 200.3,93.0 201.7,95.1 203.0,97.1 204.4,99.0 205.8,100.9 207.1,102.7 208.5,104.5 209.8,106.2 211.2,107.9 212.6,109.5 213.9,111.1 215.3,112.6 216.6,114.0 218.0,115.3 219.4,116.7 220.7,117.9 222.1,119.1 223.4,120.2 224.8,121.3 226.2,122.3 227.5,123.3 228.9,124.2 230.2,125.1 231.6,125.9 233.0,126.6 234.3,127.4 235.7,128.0 237.0,128.7 238.4,129.2 239.8,129.8 241.1,130.3 242.5,130.8 243.8,131.2 245.2,131.6 246.6,132.0 247.9,132.4 249.3,132.7 250.6,133.0 252.0,133.3 253.4,133.5 254.7,133.8 256.1,134.0 257.4,134.2 258.8,134.4 260.2,134.5 261.5,134.7 262.9,134.8 264.2,134.9 265.6,135.0 267.0,135.1 268.3,135.2 269.7,135.3 271.0,135.4 272.4,135.5 273.8,135.5 275.1,135.6 276.5,135.6 277.8,135.7 279.2,135.7 280.6,135.7 281.9,135.8 283.3,135.8 284.6,135.8 286.0,135.8"/><line x1="10.0" y1="136.0" x2="290.0" y2="136.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><line x1="150.0" y1="136.0" x2="150.0" y2="31.7" stroke="#888" stroke-width="1.1" stroke-dasharray="4 3" stroke-linecap="round"/><line x1="150.0" y1="133.0" x2="150.0" y2="139.0" stroke="#444" stroke-width="1.3" stroke-linecap="round"/><text x="150.0" y="156.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">120</tspan></text><line x1="187.8" y1="133.0" x2="187.8" y2="139.0" stroke="#444" stroke-width="1.3" stroke-linecap="round"/><text x="187.8" y="156.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">130</tspan></text></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>\(n\) が大きいとき、二項分布 \(B(n,\ p)\) は、同じ平均・分散をもつ<b>正規分布 \(N(np,\ npq)\)</b> で近似できる。</p>
+<ol class="cond"><li>\(X\sim B(n,\ p)\) の \(m=np,\ \sigma^2=npq\) を求める。</li><li>\(X\) は近似的に \(N(m,\ \sigma^2)\) に従うとして、\(Z=\dfrac{X-m}{\sigma}\) で標準化する。</li><li>例題3と同じ手順で、正規分布表から確率を求める。</li></ol><div class="tip"><span class="tip-h">コツ</span><p>「近似的に」とことわって、\(n\) と \(p\) から平均と標準偏差を作るのが出発点。例題1で身につけた「\(n,\ p\) を読み取る」が、そのまま使える。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> \(n,\ p\) から、平均と標準偏差を求める</div><div class="step-b"><p>\(X\sim B\left(720,\ \dfrac16\right)\)。\(m=720\cdot\dfrac16=120\)、\(\sigma^2=720\cdot\dfrac16\cdot\dfrac56=100\)、\(\sigma=10\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 正規分布 \(N(120,\ 10^2)\) で近似し、標準化する</div><div class="step-b"><p>\(Z=\dfrac{X-120}{10}\)。\(X=130\) のとき \(Z=1\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 裾の確率を求める</div><div class="step-b"><p>\(P(X\geqq130)\fallingdotseq P(Z\geqq1)=0.5-p(1)=0.5-0.3413=0.1587\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ \begin{aligned}X&\sim B\left(720,\tfrac16\right)\ \Rightarrow\ m=120,\ \sigma=10\\ P(X\geqq130)&\fallingdotseq P(Z\geqq1)=0.5-0.3413=0.1587\end{aligned} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 5</h2><ol class="prac pf dec"><li><div class="pw"><div class="pt">1枚の硬貨を400回投げて、表が出る回数を \(X\) とする。\(P(X\geqq215)\) を正規分布で近似して求めよ。ただし \(p(1.5)=0.4332\)</div></div></li><li><div class="pw"><div class="pt">1枚の硬貨を100回投げて、表が出る回数を \(X\) とする。\(P(40\leqq X\leqq55)\) を正規分布で近似して求めよ。ただし \(p(1)=0.3413\), \(p(2)=0.4772\)</div></div></li><li><div class="pw"><div class="pt">不良品率 \(20\%\) の製品を400個調べ、不良品の個数を \(X\) とする。\(P(X\leqq72)\) を正規分布で近似して求めよ。ただし \(p(1)=0.3413\)</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-t08.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="t07.html">← 前の例題</a><a href="t09.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/tokei-mondai.pdf">問題編（統計的な推測・全ページ）</a>　<a href="pdf/tokei-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

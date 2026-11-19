@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題7 要素の個数（「〜でも〜でもない」の個数） | 数ラボ</title>
+<meta name="description" content="n(Ā)=n(U)−n(A) を使った、「でもない」数の個数の求め方を解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+
+</head>
+<body class="ch2">
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-shugo.html">集合</a> ＞ 例題7</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 7</span><span class="lsub">第2章　集合と命題　要素の個数（補集合）</span></h1>
+<div class="qbox"><p>\(1\) から \(100\) までの整数のうち、\(3\) でも \(5\) でも割り切れない数は何個あるか。</p></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>「\(3\) でも \(5\) でも割り切れない」は、「\(3\) の倍数または \(5\) の倍数」の<b>補集合</b>。</p>\[ n(\overline{A\cup B})=n(U)-n(A\cup B) \]<p>まず例題6と同じ方法で \(n(A\cup B)\) を求め、全体の個数 \(n(U)\) から引く。</p><div class="fig"><svg viewBox="0 0 240 120" role="img" aria-label="図"><defs><clipPath id="a6"><circle cx="95" cy="60" r="42"/></clipPath><clipPath id="b6"><circle cx="145" cy="60" r="42"/></clipPath></defs><rect x="4" y="4" width="232" height="112" rx="6" fill="#9fb8e8"/><circle cx="95" cy="60" r="42" fill="#fff"/><circle cx="145" cy="60" r="42" fill="#fff"/><rect x="4" y="4" width="232" height="112" rx="6" fill="none" stroke="#555" stroke-width="1.5"/><circle cx="95" cy="60" r="42" fill="none" stroke="#1F4E9A" stroke-width="2"/><circle cx="145" cy="60" r="42" fill="none" stroke="#1F4E9A" stroke-width="2"/><text x="14" y="20" font-size="14" font-weight="700">U</text><text x="60" y="24" font-size="15" font-weight="700" fill="#1F4E9A">A</text><text x="176" y="24" font-size="15" font-weight="700" fill="#1F4E9A">B</text><text x="70" y="64" font-size="15" text-anchor="middle">27</text><text x="120" y="64" font-size="15" text-anchor="middle">6</text><text x="170" y="64" font-size="15" text-anchor="middle">14</text><text x="211" y="104" font-size="15" text-anchor="middle">53</text></svg><p class="figcap">色をぬった外側が \(\overline{A\cup B}\)。\(27+6+14+53=100=n(U)\) で検算できる</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 全体 \(U\) の個数を確認する</div><div class="step-b"><p>\(U=\{1,2,\ldots,100\}\) より \(n(U)=100\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> \(n(A\cup B)\) を求める（\(A\)：\(3\) の倍数、\(B\)：\(5\) の倍数）</div><div class="step-b"><p>例題6より \(n(A)=33,\ n(B)=20,\ n(A\cap B)=6\)<br>\(n(A\cup B)=33+20-6=47\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 全体から引く</div><div class="step-b"><p>\(n(\overline{A\cup B})=100-47=53\)</p></div></div></section>
+<div class="ktw"><section class="bar navy"><h2>解くコツ</h2><ul class="kt"><li>「〜でも〜でもない」は補集合。先に \(n(A\cup B)\) を求め、\(n(U)\) から引く。</li><li>4つの領域の合計が \(n(U)\) になるかで検算できる。</li></ul></section></div>
+
+<div class="abox tx"><p class="ah">【答案（テストに書く形）】</p>\[ n(\overline{A\cup B})=n(U)-n(A\cup B)=100-47=53 \]<p class="ans-mark">答　53 個</p></div>
+<section class="bar navy"><h2>練習問題 7</h2><ol class="prac txt"><li>\(1\) から \(100\) までの整数のうち、\(2\) でも \(3\) でも割り切れない数は何個あるか。</li><li>\(1\) から \(60\) までの整数のうち、\(3\) でも \(5\) でも割り切れない数は何個あるか。</li><li>\(1\) から \(150\) までの整数のうち、\(2\) でも \(7\) でも割り切れない数は何個あるか。</li></ol></section>
+
+<p><a class="btn" href="kaito-ch2-7.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="ch2-6.html">← 前の例題</a><a href="ch2-8.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/ch2-mondai.pdf">問題編（第2章 全ページ）</a>　<a href="pdf/ch2-bessatsu.pdf">別冊 練習問題の解答（第2章）</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ 掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

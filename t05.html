@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題2 連続型確率変数と確率密度関数 | 数ラボ</title>
+<meta name="description" content="確率密度関数のグラフの面積が確率になることを使って、係数と確率を求める手順。図つき。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-B.html">数学B</a> ＞ <a href="unit-nikou.html">二項分布・正規分布</a> ＞ 例題2</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 2</span><span class="lsub">統計的な推測　連続型確率変数と確率密度関数</span></h1>
+<div class="qbox qflex"><div class="qt"><p>連続型確率変数 \(X\) の確率密度関数が、\(0\leqq x\leqq2\) で \(f(x)=kx\)、それ以外では \(f(x)=0\) であるとする。</p><p>(1) 定数 \(k\) の値を求めよ。　(2) \(P\left(\dfrac12\leqq X\leqq\dfrac32\right)\) を求めよ。</p></div><div class="fig"><svg viewBox="0 0 280 190" role="img" aria-label="f(x)=kx のグラフ" xmlns="http://www.w3.org/2000/svg"><polygon points="107.4,160.0 107.4,131.6 109.0,130.7 110.5,129.7 112.0,128.8 113.5,127.8 115.0,126.9 116.5,125.9 118.1,125.0 119.6,124.0 121.1,123.1 122.6,122.1 124.1,121.2 125.7,120.2 127.2,119.3 128.7,118.3 130.2,117.4 131.7,116.5 133.3,115.5 134.8,114.6 136.3,113.6 137.8,112.7 139.3,111.7 140.8,110.8 142.4,109.8 143.9,108.9 145.4,107.9 146.9,107.0 148.4,106.0 150.0,105.1 151.5,104.1 153.0,103.2 154.5,102.3 156.0,101.3 157.6,100.4 159.1,99.4 160.6,98.5 162.1,97.5 163.6,96.6 165.2,95.6 166.7,94.7 168.2,93.7 169.7,92.8 171.2,91.8 172.7,90.9 174.3,89.9 175.8,89.0 177.3,88.1 178.8,87.1 180.3,86.2 181.9,85.2 183.4,84.3 184.9,83.3 186.4,82.4 187.9,81.4 189.5,80.5 191.0,79.5 192.5,78.6 194.0,77.6 195.5,76.7 197.0,75.7 198.6,74.8 198.6,160.0" fill="#d9822b" fill-opacity="0.45" stroke="none"/><polyline fill="none" stroke="#1F4E9A" stroke-width="2.3" points="40.0,160.0 41.1,160.0 42.3,160.0 43.4,160.0 44.5,160.0 45.6,160.0 46.8,160.0 47.9,160.0 49.0,160.0 50.2,160.0 51.3,160.0 52.4,160.0 53.6,160.0 54.7,160.0 55.8,160.0 57.0,160.0 58.1,160.0 59.2,160.0 60.3,160.0 61.5,160.0 61.9,160.0 62.6,159.5 63.7,158.8 64.9,158.1 66.0,157.4 67.1,156.7 68.2,156.0 69.4,155.3 70.5,154.6 71.6,153.9 72.8,153.2 73.9,152.5 75.0,151.8 76.2,151.1 77.3,150.4 78.4,149.7 79.5,149.0 80.7,148.3 81.8,147.6 82.9,146.9 84.1,146.2 85.2,145.5 86.3,144.8 87.5,144.1 88.6,143.3 89.7,142.6 90.8,141.9 92.0,141.2 93.1,140.5 94.2,139.8 95.4,139.1 96.5,138.4 97.6,137.7 98.8,137.0 99.9,136.3 101.0,135.6 102.2,134.9 103.3,134.2 104.4,133.5 105.5,132.8 106.7,132.1 107.8,131.4 108.9,130.7 110.1,130.0 111.2,129.3 112.3,128.6 113.4,127.9 114.6,127.1 115.7,126.4 116.8,125.7 118.0,125.0 119.1,124.3 120.2,123.6 121.4,122.9 122.5,122.2 123.6,121.5 124.8,120.8 125.9,120.1 127.0,119.4 128.1,118.7 129.3,118.0 130.4,117.3 131.5,116.6 132.7,115.9 133.8,115.2 134.9,114.5 136.1,113.8 137.2,113.1 138.3,112.4 139.4,111.7 140.6,110.9 141.7,110.2 142.8,109.5 144.0,108.8 145.1,108.1 146.2,107.4 147.3,106.7 148.5,106.0 149.6,105.3 150.7,104.6 151.9,103.9 153.0,103.2 154.1,102.5 155.3,101.8 156.4,101.1 157.5,100.4 158.7,99.7 159.8,99.0 160.9,98.3 162.0,97.6 163.2,96.9 164.3,96.2 165.4,95.5 166.6,94.7 167.7,94.0 168.8,93.3 169.9,92.6 171.1,91.9 172.2,91.2 173.3,90.5 174.5,89.8 175.6,89.1 176.7,88.4 177.9,87.7 179.0,87.0 180.1,86.3 181.2,85.6 182.4,84.9 183.5,84.2 184.6,83.5 185.8,82.8 186.9,82.1 188.0,81.4 189.2,80.7 190.3,80.0 191.4,79.3 192.6,78.5 193.7,77.8 194.8,77.1 195.9,76.4 197.1,75.7 198.2,75.0 199.3,74.3 200.5,73.6 201.6,72.9 202.7,72.2 203.9,71.5 205.0,70.8 206.1,70.1 207.2,69.4 208.4,68.7 209.5,68.0 210.6,67.3 211.8,66.6 212.9,65.9 214.0,65.2 215.2,64.5 216.3,63.8 217.4,63.1 218.5,62.3 219.7,61.6 220.8,60.9 221.9,60.2 223.1,59.5 224.2,58.8 225.3,58.1 226.4,57.4 227.6,56.7 228.7,56.0 229.8,55.3 231.0,54.6 232.1,53.9 233.2,53.2 234.4,52.5 235.5,51.8 236.6,51.1 237.8,50.4 238.9,49.7 240.0,49.0 241.1,48.3 242.3,47.6 243.4,46.9 244.1,46.4 244.5,160.0 245.7,160.0 246.8,160.0 247.9,160.0 249.1,160.0 250.2,160.0 251.3,160.0 252.4,160.0 253.6,160.0 254.7,160.0 255.8,160.0 257.0,160.0 258.1,160.0 259.2,160.0 260.4,160.0 261.5,160.0 262.6,160.0 263.7,160.0 264.9,160.0 266.0,160.0"/><line x1="36.0" y1="160.0" x2="270.0" y2="160.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><line x1="61.9" y1="164.0" x2="61.9" y2="14.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="57.9" y="14.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">y</tspan></text><text x="270.0" y="179.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">x</tspan></text><line x1="107.4" y1="157.0" x2="107.4" y2="163.0" stroke="#444" stroke-width="1.3" stroke-linecap="round"/><text x="107.4" y="180.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">1/2</tspan></text><line x1="198.6" y1="157.0" x2="198.6" y2="163.0" stroke="#444" stroke-width="1.3" stroke-linecap="round"/><text x="198.6" y="180.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">3/2</tspan></text><line x1="244.1" y1="157.0" x2="244.1" y2="163.0" stroke="#444" stroke-width="1.3" stroke-linecap="round"/><text x="244.1" y="180.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">2</tspan></text><line x1="37.0" y1="46.4" x2="43.0" y2="46.4" stroke="#444" stroke-width="1.3" stroke-linecap="round"/><text x="34.0" y="51.7" font-size="15.2" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">2k</tspan></text><line x1="40.0" y1="46.4" x2="244.1" y2="46.4" stroke="#888" stroke-width="1.0" stroke-dasharray="3 3" stroke-linecap="round"/></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>連続型の確率変数では、<b>確率は、確率密度関数のグラフと \(x\) 軸の間の面積</b>で表される。</p>
+\[ P(a\leqq X\leqq b)=(\text{グラフの}\ a\leqq x\leqq b\ \text{の部分の面積}),\qquad (\text{全体の面積})=1 \]
+<p>グラフが直線なら、三角形や台形の面積の公式で求められる（積分でも同じ値）。</p><div class="tip"><span class="tip-h">コツ</span><p>確率密度関数の値そのものが確率ではない。\(f(x)\) は「高さ」で、確率は「面積」。\(f(x)\geqq0\) と、全体の面積が1であることが条件。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 全体の面積が1であることを使う</div><div class="step-b"><p>グラフは、底辺 \(2\)、高さ \(f(2)=2k\) の三角形。面積は \(\dfrac12\cdot2\cdot2k=2k\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (1) \(k\) を求める</div><div class="step-b"><p>\(2k=1\) より \(k=\dfrac12\)。つまり \(f(x)=\dfrac12x\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (2) 範囲の面積（台形）を求める</div><div class="step-b"><p>\(f\left(\dfrac12\right)=\dfrac14,\ f\left(\dfrac32\right)=\dfrac34\)。台形の面積は \(\dfrac12\left(\dfrac14+\dfrac34\right)\times1=\dfrac12\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ k=\frac12\qquad(2)\ P\left(\tfrac12\leqq X\leqq\tfrac32\right)=\frac12 \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 2</h2><ol class="prac pf dec"><li><div class="pw"><div class="pt">\(0\leqq x\leqq4\) で \(f(x)=kx\)、それ以外で \(f(x)=0\)。次を求めよ。(1) \(k\)　(2) \(P(1\leqq X\leqq3)\)</div></div></li><li><div class="pw"><div class="pt">\(0\leqq x\leqq5\) で \(f(x)=k\)（一定）、それ以外で \(f(x)=0\)。次を求めよ。(1) \(k\)　(2) \(P(1\leqq X\leqq3)\)</div></div></li><li><div class="pw"><div class="pt">\(0\leqq x\leqq1\) で \(f(x)=kx\)、それ以外で \(f(x)=0\)。次を求めよ。(1) \(k\)　(2) \(P\left(\dfrac12\leqq X\leqq1\right)\)</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-t05.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="t04.html">← 前の例題</a><a href="t06.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/tokei-mondai.pdf">問題編（統計的な推測・全ページ）</a>　<a href="pdf/tokei-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>
