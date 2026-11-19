@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題3 絶対値を含む定積分（積分） | 数ラボ</title>
+<meta name="description" content="絶対値を含む定積分を、区間を分けて計算する方法を、例題1つで手順どおりに解説。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+</head>
+<body class="ch2 zk">
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-2.html">数学II</a> ＞ <a href="unit-sekibun.html">積分</a> ＞ 例題3</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 3</span><span class="lsub">数学II　微分・積分　積分</span></h1>
+<div class="qbox"><p>定積分 \(\displaystyle\int_0^3|x-1|\,dx\) を求めよ。</p></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>絶対値は、<b>中身が \(0\) になる点</b>で区間を分けて外す。中身が \(\ge0\) の所はそのまま、\(<0\) の所は符号を変えて \(-(\ \ )\)。そのあと、区間ごとに定積分を計算して足す。</p></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 境目を見つける</div><div class="step-b">\(x-1=0\) の \(x=1\)。\(0\le x\le1\) で \(|x-1|=-(x-1)\)、\(1\le x\le3\) で \(|x-1|=x-1\)</div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 区間ごとに積分</div><div class="step-b">\(\int_0^1(-x+1)dx=\Big[-\frac{x^2}{2}+x\Big]_0^1=\frac12\)、\(\int_1^3(x-1)dx=\Big[\frac{x^2}{2}-x\Big]_1^3=2\)</div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 足す</div><div class="step-b">\(\frac12+2=\frac52\)</div></div></section>
+<div class="ktw"><section class="bar navy"><h2>解くコツ</h2><ul class="kt"><li>絶対値は<b>中身が0になる所</b>で区間を分け、符号を見て外す。</li><li>V字のグラフを思い浮かべると、答えの見当がつく（三角形の面積の和になることもある）。</li></ul></section></div>
+
+<div class="abox tx"><p class="ah">【答案（テストに書く形）】</p><p>\(\displaystyle\int_0^3|x-1|\,dx=\int_0^1\{-(x-1)\}dx+\int_1^3(x-1)\,dx\)</p><p>\(=\Big[-\dfrac{x^2}{2}+x\Big]_0^1+\Big[\dfrac{x^2}{2}-x\Big]_1^3=\dfrac12+2=\dfrac52\)</p><p class="ans-mark">答</p><p class="check">グラフ（V字）と \(x\) 軸の間の面積：三角形 \(\frac12\cdot1\cdot1\) と \(\frac12\cdot2\cdot2\) の和 \(=\frac52\)。</p></div>
+<section class="bar navy"><h2>練習問題 3</h2><ol class="prac txt"><li>\(\displaystyle\int_0^4|x-2|\,dx\) を求めよ。</li><li>\(\displaystyle\int_{-1}^2|x|\,dx\) を求めよ。</li><li>\(\displaystyle\int_0^5|x-3|\,dx\) を求めよ。</li></ol></section>
+
+<p><a class="btn" href="kaito-sb-3.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="sb-2.html">← 前の例題</a><a href="sb-4.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/bs-mondai.pdf">問題編（微分・積分 全ページ）</a>　<a href="pdf/bs-bessatsu.pdf">別冊 練習問題の解答（微分・積分）</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

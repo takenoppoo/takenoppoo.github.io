@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題7 方程式の実数解の個数（微分） | 数ラボ</title>
+<meta name="description" content="グラフを使って方程式の実数解の個数を調べる方法を、例題1つで手順どおりに解説。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+</head>
+<body class="ch2 zk">
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-2.html">数学II</a> ＞ <a href="unit-bibun.html">微分</a> ＞ 例題7</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 7</span><span class="lsub">数学II　微分・積分　微分</span></h1>
+<div class="qbox"><p>方程式 \(x^3-3x=k\) の異なる実数解の個数を、定数 \(k\) の値で場合分けして答えよ。</p></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>左辺を \(y=f(x)\)、右辺を \(y=k\) とみて、<b>グラフと水平線 \(y=k\) の共有点の個数</b>を調べる。\(k\) を分けて文字だけにしておくのがコツ。グラフは増減表から、極大値・極小値を使ってかく。</p><div class="fig"><svg viewBox="0 0 280 210" role="img"><line x1="34.0" y1="105.0" x2="246.0" y2="105.0" stroke="#333" stroke-width="1.2"/><line x1="140.0" y1="188.0" x2="140.0" y2="22.0" stroke="#333" stroke-width="1.2"/><text x="242.0" y="120.0" font-size="13" font-style="italic">x</text><text x="146.0" y="32.0" font-size="13" font-style="italic">y</text><text x="128.0" y="119.0" font-size="12">O</text><polyline points="38.0,192.3 39.3,185.4 40.6,178.8 41.9,172.4 43.3,166.2 44.6,160.2 45.9,154.4 47.3,148.9 48.6,143.5 49.9,138.3 51.2,133.4 52.5,128.6 53.9,124.1 55.2,119.7 56.5,115.5 57.9,111.6 59.2,107.8 60.5,104.1 61.8,100.7 63.1,97.4 64.5,94.3 65.8,91.4 67.1,88.6 68.5,86.0 69.8,83.6 71.1,81.3 72.4,79.1 73.8,77.2 75.1,75.3 76.4,73.6 77.7,72.1 79.0,70.7 80.4,69.4 81.7,68.3 83.0,67.2 84.3,66.4 85.7,65.6 87.0,65.0 88.3,64.5 89.7,64.0 91.0,63.8 92.3,63.6 93.6,63.5 95.0,63.5 96.3,63.7 97.6,63.9 98.9,64.2 100.2,64.6 101.6,65.1 102.9,65.7 104.2,66.4 105.5,67.1 106.9,68.0 108.2,68.9 109.5,69.8 110.8,70.9 112.2,72.0 113.5,73.2 114.8,74.4 116.2,75.7 117.5,77.0 118.8,78.4 120.1,79.8 121.4,81.3 122.8,82.8 124.1,84.4 125.4,86.0 126.8,87.6 128.1,89.3 129.4,90.9 130.7,92.6 132.1,94.4 133.4,96.1 134.7,97.9 136.0,99.6 137.3,101.4 138.7,103.2 140.0,105.0 141.3,106.8 142.7,108.6 144.0,110.4 145.3,112.1 146.6,113.9 147.9,115.6 149.3,117.4 150.6,119.1 151.9,120.7 153.2,122.4 154.6,124.0 155.9,125.6 157.2,127.2 158.6,128.7 159.9,130.2 161.2,131.6 162.5,133.0 163.8,134.3 165.2,135.6 166.5,136.8 167.8,138.0 169.2,139.1 170.5,140.2 171.8,141.1 173.1,142.0 174.4,142.9 175.8,143.6 177.1,144.3 178.4,144.9 179.8,145.4 181.1,145.8 182.4,146.1 183.7,146.3 185.1,146.5 186.4,146.5 187.7,146.4 189.0,146.2 190.3,146.0 191.7,145.5 193.0,145.0 194.3,144.4 195.6,143.6 197.0,142.8 198.3,141.7 199.6,140.6 200.9,139.3 202.3,137.9 203.6,136.4 204.9,134.7 206.2,132.8 207.6,130.9 208.9,128.7 210.2,126.4 211.6,124.0 212.9,121.4 214.2,118.6 215.5,115.7 216.8,112.6 218.2,109.3 219.5,105.9 220.8,102.2 222.1,98.4 223.5,94.5 224.8,90.3 226.1,85.9 227.4,81.4 228.8,76.6 230.1,71.7 231.4,66.5 232.8,61.1 234.1,55.6 235.4,49.8 236.7,43.8 238.1,37.6 239.4,31.2 240.7,24.6 242.0,17.7" fill="none" stroke="#1F4E9A" stroke-width="2"/><line x1="34.0" y1="63.5" x2="246.0" y2="63.5" stroke="#c0283c" stroke-width="1.5" stroke-dasharray="5 4"/><text x="244.0" y="59.5" font-size="12" fill="#c0283c" text-anchor="end">y=2</text><line x1="34.0" y1="88.4" x2="246.0" y2="88.4" stroke="#2a7f62" stroke-width="1.5" stroke-dasharray="5 4"/><text x="244.0" y="84.4" font-size="12" fill="#2a7f62" text-anchor="end">y=k</text><line x1="34.0" y1="146.5" x2="246.0" y2="146.5" stroke="#c0283c" stroke-width="1.5" stroke-dasharray="5 4"/><text x="244.0" y="142.5" font-size="12" fill="#c0283c" text-anchor="end">y=−2</text><circle cx="93.9" cy="63.5" r="3" fill="#c0283c"/><circle cx="186.1" cy="146.5" r="3" fill="#c0283c"/></svg><div class="figcap">\(y=x^3-3x\) と水平線 \(y=k\)。\(k\) を動かして共有点を数える</div></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> グラフの形を決める</div><div class="step-b">\(f(x)=x^3-3x\)、\(f'(x)=3(x+1)(x-1)\)。\(x=-1\) で極大値 \(2\)、\(x=1\) で極小値 \(-2\)</div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 水平線を動かす</div><div class="step-b">\(y=k\) を上下に動かして、共有点の数を数える</div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 場合分け</div><div class="step-b">\(k>2,\ k<-2\) → 1個、\(k=\pm2\) → 2個、\(-2&lt;k<2\) → 3個</div></div></section>
+<div class="ktw"><section class="bar navy"><h2>解くコツ</h2><ul class="kt"><li>方程式の解の個数は、<b>\(k\) を右辺に分けて</b>、「グラフ \(y=f(x)\) と水平線 \(y=k\) の共有点」で読む。</li><li>極大値・極小値ちょうどの高さでは、共有点が<b>2個</b>（接する）になる。ここは別に数える。</li></ul></section></div>
+
+<div class="abox tx"><p class="ah">【答案（テストに書く形）】</p><p>\(f(x)=x^3-3x\) とおくと \(f'(x)=3(x+1)(x-1)\)。極大値 \(f(-1)=2\)、極小値 \(f(1)=-2\)</p><p>\(y=f(x)\) と \(y=k\) の共有点の個数が解の個数。</p><p>\(k<-2,\ 2&lt;k\) のとき \(1\) 個、\(k=-2,\ 2\) のとき \(2\) 個、\(-2&lt;k<2\) のとき \(3\) 個</p><p class="ans-mark">答</p><p class="check">\(k=0\) のとき \(x(x^2-3)=0\) で解は3個（\(-2<0<2\) に合う）。</p></div>
+<section class="bar navy"><h2>練習問題 7</h2><ol class="prac txt"><li>方程式 \(x^3-12x=k\) の異なる実数解の個数を、\(k\) の値で場合分けして答えよ。</li><li>方程式 \(x^3-3x^2=k\) の異なる実数解の個数を、\(k\) の値で場合分けして答えよ。</li><li>方程式 \(2x^3-3x^2-12x=k\) の異なる実数解の個数を、\(k\) の値で場合分けして答えよ。</li></ol></section>
+
+<p><a class="btn" href="kaito-bb-7.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="bb-6.html">← 前の例題</a><a href="bb-8.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/bs-mondai.pdf">問題編（微分・積分 全ページ）</a>　<a href="pdf/bs-bessatsu.pdf">別冊 練習問題の解答（微分・積分）</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

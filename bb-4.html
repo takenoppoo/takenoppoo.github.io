@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題4 増減表と極値（微分） | 数ラボ</title>
+<meta name="description" content="3次関数の増減表をかいて極大値・極小値を求める方法を、例題1つで手順どおりに解説。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+</head>
+<body class="ch2 zk">
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-2.html">数学II</a> ＞ <a href="unit-bibun.html">微分</a> ＞ 例題4</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 4</span><span class="lsub">数学II　微分・積分　微分</span></h1>
+<div class="qbox"><p>関数 \(f(x)=x^3-3x^2-9x+2\) の増減表をかき、極値を求めよ。</p></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>① \(f'(x)=0\) を解く。② その前後で \(f'(x)\) の<b>符号</b>を調べ、増減表にまとめる。③ \(f'\) が <b>+から−</b>に変わる所が<b>極大</b>、<b>−から+</b>に変わる所が<b>極小</b>。極値は、その \(x\) を \(f(x)\) に入れた値。</p><div class="fig"><svg viewBox="0 0 280 210" role="img"><line x1="34.0" y1="77.3" x2="246.0" y2="77.3" stroke="#333" stroke-width="1.2"/><line x1="113.5" y1="188.0" x2="113.5" y2="22.0" stroke="#333" stroke-width="1.2"/><text x="242.0" y="92.3" font-size="13" font-style="italic">x</text><text x="119.5" y="32.0" font-size="13" font-style="italic">y</text><text x="101.5" y="91.3" font-size="12">O</text><line x1="87.0" y1="74.3" x2="87.0" y2="80.3" stroke="#333"/><text x="87.0" y="93.3" font-size="12" text-anchor="middle">-1</text><line x1="193.0" y1="74.3" x2="193.0" y2="80.3" stroke="#333"/><text x="193.0" y="93.3" font-size="12" text-anchor="middle">3</text><polyline points="34.0,176.1 35.3,169.1 36.7,162.4 38.0,155.9 39.3,149.6 40.6,143.5 41.9,137.6 43.3,132.0 44.6,126.6 45.9,121.4 47.2,116.4 48.6,111.6 49.9,107.0 51.2,102.6 52.6,98.4 53.9,94.4 55.2,90.6 56.5,87.0 57.8,83.6 59.2,80.4 60.5,77.3 61.8,74.5 63.2,71.8 64.5,69.2 65.8,66.9 67.1,64.7 68.5,62.6 69.8,60.8 71.1,59.1 72.4,57.5 73.8,56.1 75.1,54.8 76.4,53.7 77.7,52.7 79.0,51.9 80.4,51.2 81.7,50.6 83.0,50.2 84.3,49.9 85.7,49.7 87.0,49.7 88.3,49.7 89.7,49.9 91.0,50.2 92.3,50.6 93.6,51.1 94.9,51.7 96.3,52.4 97.6,53.2 98.9,54.1 100.2,55.1 101.6,56.2 102.9,57.4 104.2,58.6 105.6,59.9 106.9,61.3 108.2,62.8 109.5,64.4 110.8,66.0 112.2,67.7 113.5,69.4 114.8,71.2 116.2,73.1 117.5,75.0 118.8,77.0 120.1,79.0 121.4,81.1 122.8,83.2 124.1,85.3 125.4,87.5 126.8,89.7 128.1,91.9 129.4,94.2 130.7,96.5 132.1,98.8 133.4,101.1 134.7,103.5 136.0,105.8 137.3,108.2 138.7,110.5 140.0,112.9 141.3,115.3 142.6,117.6 144.0,120.0 145.3,122.4 146.6,124.7 147.9,127.0 149.3,129.3 150.6,131.6 151.9,133.9 153.2,136.1 154.6,138.3 155.9,140.5 157.2,142.6 158.6,144.7 159.9,146.8 161.2,148.8 162.5,150.8 163.9,152.7 165.2,154.6 166.5,156.4 167.8,158.1 169.1,159.8 170.5,161.4 171.8,163.0 173.1,164.5 174.4,165.9 175.8,167.2 177.1,168.5 178.4,169.6 179.8,170.7 181.1,171.7 182.4,172.6 183.7,173.4 185.1,174.1 186.4,174.7 187.7,175.2 189.0,175.6 190.4,175.9 191.7,176.1 193.0,176.1 194.3,176.1 195.6,175.9 197.0,175.6 198.3,175.2 199.6,174.6 200.9,173.9 202.3,173.1 203.6,172.1 204.9,171.0 206.2,169.7 207.6,168.3 208.9,166.8 210.2,165.0 211.6,163.2 212.9,161.1 214.2,158.9 215.5,156.6 216.9,154.1 218.2,151.4 219.5,148.5 220.8,145.4 222.1,142.2 223.5,138.8 224.8,135.2 226.1,131.4 227.4,127.4 228.8,123.2 230.1,118.8 231.4,114.2 232.8,109.4 234.1,104.5 235.4,99.2 236.7,93.8 238.1,88.2 239.4,82.3 240.7,76.3 242.0,70.0 243.4,63.4 244.7,56.7 246.0,49.7" fill="none" stroke="#1F4E9A" stroke-width="2"/><circle cx="87.0" cy="49.7" r="3" fill="#c0283c"/><text x="93.0" y="43.7" font-size="12" fill="#c0283c">極大 7</text><circle cx="193.0" cy="176.1" r="3" fill="#c0283c"/><text x="199.0" y="170.1" font-size="12" fill="#c0283c">極小 −25</text></svg><div class="figcap">\(y=f(x)\) のグラフ（極大・極小を赤丸で示す）</div></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 導関数と、\(f'(x)=0\) の解</div><div class="step-b">\(f'(x)=3x^2-6x-9=3(x+1)(x-3)\)。\(f'(x)=0\) より \(x=-1,\ 3\)</div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 増減表をかく</div><div class="step-b"><table class="tbl"><tr><th>\(x\)</th><td>\(\cdots\)</td><td>\(-1\)</td><td>\(\cdots\)</td><td>\(3\)</td><td>\(\cdots\)</td></tr><tr><th>\(f'(x)\)</th><td>\(+\)</td><td>\(0\)</td><td>\(-\)</td><td>\(0\)</td><td>\(+\)</td></tr><tr><th>\(f(x)\)</th><td>\(\nearrow\)</td><td>\(7\)</td><td>\(\searrow\)</td><td>\(-25\)</td><td>\(\nearrow\)</td></tr></table></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 極値を読む</div><div class="step-b">\(x=-1\) で極大値 \(7\)、\(x=3\) で極小値 \(-25\)</div></div></section>
+<div class="ktw"><section class="bar navy"><h2>解くコツ</h2><ul class="kt"><li>増減表は「\(f'=0\) を解く → 符号を調べる → 値を入れる」の3段階。符号は因数分解した形で調べると速い。</li><li>極大・極小は「<b>+から−が山の頂（極大）、−から+が谷の底（極小）</b>」と図で覚える。</li></ul></section></div>
+
+<div class="abox tx"><p class="ah">【答案（テストに書く形）】</p><p>\(f'(x)=3x^2-6x-9=3(x+1)(x-3)\)。\(f'(x)=0\) となる \(x\) は \(-1,\ 3\)</p><p>増減表は上のとおり（\(f(-1)=7,\ f(3)=-25\)）</p><p>\(x=-1\) で<b>極大値 \(7\)</b>、\(x=3\) で<b>極小値 \(-25\)</b></p><p class="ans-mark">答</p><p class="check">\(f(-1)=-1-3+9+2=7\)、\(f(3)=27-27-27+2=-25\)</p></div>
+<section class="bar navy"><h2>練習問題 4</h2><ol class="prac txt"><li>\(f(x)=x^3-6x^2+9x+1\) の極値を求めよ。</li><li>\(f(x)=-x^3+3x+2\) の極値を求めよ。</li><li>\(f(x)=2x^3-3x^2-12x+5\) の極値を求めよ。</li></ol></section>
+
+<p><a class="btn" href="kaito-bb-4.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="bb-3.html">← 前の例題</a><a href="bb-5.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/bs-mondai.pdf">問題編（微分・積分 全ページ）</a>　<a href="pdf/bs-bessatsu.pdf">別冊 練習問題の解答（微分・積分）</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>
