@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題2 分数関数・対数関数の増減と極値 | 数ラボ</title>
+<meta name="description" content="分数関数・対数関数の増減と極値の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-3.html">数学III</a> ＞ <a href="unit-bibun-oyo.html">微分法の応用</a> ＞ 例題2</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 2</span><span class="lsub">微分法　分数関数・対数関数の増減と極値</span></h1>
+<div class="qbox"><div class="qt"><p>次の関数の増減を調べ、極値を求めよ。</p><p>(1) \(f(x)=\dfrac x{x^2+1}\)　(2) \(f(x)=\dfrac{\log x}x\ (x>0)\)</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>\(f'(x)\) を求め（商の微分）、<b>分子の符号</b>で増減表をつくる。分母（2乗や \(x^2\)）は正。</li><li>\(f'\) が \(+\to-\) になる所が極大、\(-\to+\) になる所が極小。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>商の微分では、分子 \(f'g-fg'\) だけを整理すれば符号が決まる。分母は \(0\) 以上なので増減には影響しない。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 微分</div><div class="step-b"><p>\(f'(x)=\dfrac{(x^2+1)-x\cdot2x}{(x^2+1)^2}=\dfrac{1-x^2}{(x^2+1)^2}\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (1) 増減表</div><div class="step-b"><p>\(f'(x)=0\) となるのは \(x=\pm1\)。\(x<-1\) で減少、\(-1&lt;x<1\) で増加、\(x>1\) で減少</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (1) 極値</div><div class="step-b"><p>\(x=-1\) で極小値 \(-\dfrac12\)、\(x=1\) で極大値 \(\dfrac12\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (2) 微分</div><div class="step-b"><p>\(f'(x)=\dfrac{\frac1x\cdot x-\log x}{x^2}=\dfrac{1-\log x}{x^2}\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 5</span> (2) 増減と極値</div><div class="step-b"><p>\(f'(x)=0\) は \(x=e\)。\(0&lt;x&lt;e\) で増加、\(x>e\) で減少。\(x=e\) で極大値 \(\dfrac1e\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ x=-1\text{ で極小 }-\tfrac12,\ x=1\text{ で極大 }\tfrac12\qquad(2)\ x=e\text{ で極大 }\tfrac1e \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 2</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>\(f(x)=\dfrac x{x^2+4}\) の極値</li><li>\(f(x)=xe^x\) の極値</li><li>\(f(x)=\dfrac{\log x}{x^2}\ (x>0)\) の極値</li></ol></section>
+
+<p><a class="btn" href="kaito-b313.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="b305.html">← 前の例題</a><a href="b306.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/b3-mondai.pdf">問題編（微分法・全ページ）</a>　<a href="pdf/b3-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

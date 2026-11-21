@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題5 変量の変換と標準化 | 数ラボ</title>
+<meta name="description" content="変量の変換と標準化の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-bunsan.html">分散・標準偏差・相関</a> ＞ 例題5</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 5</span><span class="lsub">データの分析　変量の変換と標準化</span></h1>
+<div class="qbox"><div class="qt"><p>次を答えよ。</p><p>(1) 気温 \(C\)（℃）の平均が \(20\)、標準偏差が \(5\) のとき、華氏 \(F=1.8C+32\) の平均と標準偏差　(2) 平均 \(50\)、標準偏差 \(10\) のテストで \(65\) 点の人の標準化した値 \(z\)　(3) 全員に \(5\) 点を加えたとき、平均・分散・標準偏差はどう変わるか</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>\(y=ax+b\) のとき：平均 \(\overline y=a\overline x+b\)、分散 \(s_y^2=a^2s_x^2\)、標準偏差 \(s_y=|a|s_x\)。（\(b\) は平均だけを動かし、散らばりは変えない。）</li><li>標準化：\(z=\dfrac{x-\overline x}{s}\)（平均 \(0\)、標準偏差 \(1\) になる）。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>分散は2乗の量なので \(a^2\) 倍、標準偏差は \(|a|\) 倍。\(a\) が負でも、散らばりは負にならない。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 平均</div><div class="step-b"><p>\(\overline F=1.8\times20+32=68\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (1) 標準偏差</div><div class="step-b"><p>\(s_F=1.8\times5=9\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (2) 標準化</div><div class="step-b"><p>\(z=\dfrac{65-50}{10}=1.5\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (3) \(a=1,\ b=5\)</div><div class="step-b"><p>平均は \(5\) 増える。分散・標準偏差は<b>変わらない</b></p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ \overline F=68,\ s_F=9\qquad(2)\ z=1.5\qquad(3)\ \text{平均}+5,\ \text{分散・標準偏差は不変} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 5</h2><p class="pask-h">次を答えよ。</p><ol class="prac"><li>\(y=3x-2\)、\(x\) の平均 \(10\)、標準偏差 \(4\) のときの \(y\) の平均と標準偏差</li><li>平均 \(60\)、標準偏差 \(8\) のテストで \(80\) 点の人の標準化した値 \(z\)</li><li>全員の得点を \(2\) 倍したとき、平均・分散・標準偏差はそれぞれ何倍になるか</li></ol></section>
+
+<p><a class="btn" href="kaito-dat13.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="dat07.html">← 前の例題</a><a href="dat08.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/data-mondai.pdf">問題編（データの分析・全ページ）</a>　<a href="pdf/data-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

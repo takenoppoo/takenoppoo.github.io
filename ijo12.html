@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題6 余りによる分類（平方数の余り） | 数ラボ</title>
+<meta name="description" content="余りによる分類（平方数の余り）の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-A.html">数学A</a> ＞ <a href="unit-futei.html">不定方程式・n進法</a> ＞ 例題6</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 6</span><span class="lsub">数学と人間の活動　余りによる分類（平方数の余り）</span></h1>
+<div class="qbox"><div class="qt"><p>整数 \(n\) について、(1) \(n^2\) を \(3\) で割った余りは何通りか。(2) \(n^2+1\) は \(3\) の倍数にならないことを示せ。(3) \(n\) を \(4\) で割ると \(3\) 余るとき、\(n^2\) を \(4\) で割った余りを求めよ。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>\(n\) を \(m\) で割った余りで<b>場合分け</b>：\(n=mk,\ mk+1,\dots,\ mk+(m-1)\)（\(k\) は整数）。</li><li>それぞれ2乗して、\(m\) の倍数の部分をくくり出す。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>「\(n\) を \(m\) で割った余りで分類 → 展開 → \(m\) でくくる」の3手順。余りは、あまり（負の数）を使うと計算が楽になることもある。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 3つの場合</div><div class="step-b"><p>\(n=3k,\ 3k+1,\ 3k+2\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (1) 2乗する</div><div class="step-b"><p>\(9k^2\)（余り \(0\)）、\(9k^2+6k+1\)（余り \(1\)）、\(9k^2+12k+4=3(\cdots)+1\)（余り \(1\)）</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (1) 結論</div><div class="step-b"><p>余りは \(0\) か \(1\) の2通り</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (2) \(n^2+1\) の余り</div><div class="step-b"><p>\(n^2\) の余りが \(0\) か \(1\) なので、\(n^2+1\) の余りは \(1\) か \(2\)。\(0\) にならない</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 5</span> (3) \(n=4k+3\)</div><div class="step-b"><p>\(n^2=16k^2+24k+9=4(4k^2+6k+2)+1\)。余り \(1\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ 2\text{ 通り（}0,1)\qquad(2)\ \text{示した}\qquad(3)\ 1 \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 6</h2><ol class="prac"><li>\(n^2\) を \(5\) で割った余りは何通りか。すべて答えよ</li><li>\(n^2+2\) は \(4\) の倍数にならないことを示せ</li><li>\(n\) を \(3\) で割ると \(1\) 余るとき、\(n^3\) を \(3\) で割った余り</li></ol></section>
+
+<p><a class="btn" href="kaito-ijo12.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="ijo06.html">← 前の例題</a><a href="ijo13.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/ijo-mondai.pdf">問題編（数学と人間の活動・全ページ）</a>　<a href="pdf/ijo-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>
