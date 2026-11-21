@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題14 約数の総和 | 数ラボ</title>
+<meta name="description" content="約数の総和の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-A.html">数学A</a> ＞ <a href="unit-kazu.html">場合の数（順列・組合せ）</a> ＞ 例題14</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 14</span><span class="lsub">場合の数と確率　約数の総和</span></h1>
+<div class="qbox"><div class="qt"><p>(1) 72 の正の約数の総和を求めよ。(2) 100 の正の約数の総和を求めよ。(3) 48 の正の約数の総和を求めよ。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2>\[ N=p^aq^b \ \Rightarrow\ \text{約数の総和}=(1+p+\cdots+p^a)(1+q+\cdots+q^b) \]<ul><li>素因数分解して、<b>各素因数ごとの和をかける</b>（展開すると全約数が1回ずつ出る）。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>約数の個数は \((a+1)(b+1)\)、総和は各素因数の等比数列の和の積。セットで覚える。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 素因数分解</div><div class="step-b"><p>\(72=2^3\cdot3^2\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (1) 総和</div><div class="step-b"><p>\((1+2+4+8)(1+3+9)=15\times13=195\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (2)</div><div class="step-b"><p>\(100=2^2\cdot5^2\)。\((1+2+4)(1+5+25)=7\times31=217\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (3)</div><div class="step-b"><p>\(48=2^4\cdot3\)。\((1+2+4+8+16)(1+3)=31\times4=124\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ 195\qquad(2)\ 217\qquad(3)\ 124 \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 14</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>60 の正の約数の総和</li><li>200 の正の約数の総和</li><li>96 の正の約数の総和</li></ol></section>
+
+<p><a class="btn" href="kaito-bak22.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="bak21.html">← 前の例題</a><a href="bak04.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/bak-mondai.pdf">問題編（場合の数と確率・全ページ）</a>　<a href="pdf/bak-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

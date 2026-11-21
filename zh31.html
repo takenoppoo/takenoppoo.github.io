@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題5 2点から等距離にある点の軌跡 | 数ラボ</title>
+<meta name="description" content="2点から等距離にある点の軌跡の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-2.html">数学II</a> ＞ <a href="unit-kiseki-ryoiki.html">軌跡と領域</a> ＞ 例題5</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 5</span><span class="lsub">図形と方程式　2点から等距離にある点の軌跡</span></h1>
+<div class="qbox qflex"><div class="qt"><p>次を求めよ。</p><p>(1) 2点 A(0, 0)、B(4, 2) から等距離にある点 P の軌跡 (2) A(1, 1)、B(5, 3) から等距離にある点 P の軌跡</p></div><div class="fig"><svg viewBox="0 0 290 240" role="img" aria-label="2点A, Bから等距離にある点の軌跡" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="cp7051"><rect x="30" y="14" width="175.0" height="200.0"/></clipPath></defs><line x1="26.0" y1="164.0" x2="207.0" y2="164.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><line x1="55.0" y1="218.0" x2="55.0" y2="12.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><polygon points="214.0,164.0 206.0,160.5 206.0,167.5" fill="#444"/><polygon points="55.0,6.0 51.5,15.0 58.5,15.0" fill="#444"/><text x="212.0" y="182.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">x</tspan></text><text x="46.0" y="17.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">y</tspan></text><text x="47.0" y="181.1" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">O</tspan></text><g clip-path="url(#cp7051)"><line x1="5.0" y1="-61.0" x2="230.0" y2="389.0" stroke="#c0283c" stroke-width="2.2" stroke-linecap="round"/><line x1="55.0" y1="164.0" x2="155.0" y2="114.0" stroke="#888" stroke-width="2.2" stroke-dasharray="4 3" stroke-linecap="round"/></g><text x="122.5" y="164.6" font-size="15.9" text-anchor="start" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#c0283c"><tspan dy="0.0">l</tspan></text><circle cx="55.0" cy="164.0" r="3.6" fill="#c0283c"/><text x="47.0" y="183.6" font-size="15.9" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">A</tspan></text><circle cx="155.0" cy="114.0" r="3.6" fill="#c0283c"/><text x="163.0" y="123.6" font-size="15.9" text-anchor="start" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">B</tspan></text><circle cx="105.0" cy="139.0" r="3.6" fill="#c0283c"/><text x="113.0" y="156.6" font-size="15.9" text-anchor="start" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">M</tspan></text></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>点 P(\(x,y\)) とおき、条件を式にする：\(AP=BP\) すなわち \(AP^2=BP^2\)。展開して整理する。<b>軌跡は線分 AB の垂直二等分線</b>（直線）になる。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>軌跡の答えは「…の軌跡は、直線（円）…」と、図形の名前も添える。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 式</div><div class="step-b"><p>\(x^2+y^2=(x-4)^2+(y-2)^2\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (1) 整理</div><div class="step-b"><p>\(0=-8x+16-4y+4\)。\(2x+y-5=0\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (2) 式</div><div class="step-b"><p>\((x-1)^2+(y-1)^2=(x-5)^2+(y-3)^2\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (2) 整理</div><div class="step-b"><p>\(-2x-2y+2=-10x-6y+34\)。\(8x+4y-32=0\)。\(2x+y-8=0\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ 2x+y-5=0\qquad(2)\ 2x+y-8=0 \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 5</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>A(1, 0)、B(3, 4) から等距離にある点の軌跡</li><li>A(0, 0)、B(6, 0) から等距離にある点の軌跡</li><li>A(−1, 2)、B(3, −2) から等距離にある点の軌跡</li></ol></section>
+
+<p><a class="btn" href="kaito-zh31.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="zh14.html">← 前の例題</a><a href="zh32.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/zh-mondai.pdf">問題編（図形と方程式・全ページ）</a>　<a href="pdf/zh-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

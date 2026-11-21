@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題6 くじ引きと条件付き確率（引く順番は関係ない） | 数ラボ</title>
+<meta name="description" content="くじ引きと条件付き確率（引く順番は関係ない）の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-A.html">数学A</a> ＞ <a href="unit-joken.html">条件付き確率・期待値</a> ＞ 例題6</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 6</span><span class="lsub">場合の数と確率　くじ引きと条件付き確率（引く順番は関係ない）</span></h1>
+<div class="qbox"><div class="qt"><p>8本のくじの中に当たりが2本入っている。A, B の2人がこの順に1本ずつ引く（引いたくじは戻さない）。B が当たる確率を求めよ。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>Bが当たるのは、「A当たり→B当たり」または「Aはずれ→B当たり」の<b>2通り</b>。それぞれを乗法定理で求めて足す。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>くじ引きは「引く順番に関係なく、当たる確率は同じ」。計算で確かめられると、先に引くか後に引くかで損得がないと説明できる。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> A当たり・B当たり</div><div class="step-b"><p>\(\dfrac28\times\dfrac17=\dfrac2{56}\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> Aはずれ・B当たり</div><div class="step-b"><p>\(\dfrac68\times\dfrac27=\dfrac{12}{56}\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 足す</div><div class="step-b"><p>\(\dfrac{14}{56}=\dfrac14\)（A が当たる確率 \(\dfrac28\) と同じ）</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ \dfrac14 \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 6</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>10本のくじ（当たり3本）をA, Bの順に引く。Bが当たる確率</li><li>6本のくじ（当たり2本）をA, Bの順に引く。Bが当たる確率</li><li>9本のくじ（当たり3本）をA, Bの順に引く。AもBも当たる確率</li></ol></section>
+
+<p><a class="btn" href="kaito-bak34.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="bak33.html">← 前の例題</a><a href="bak35.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/bak-mondai.pdf">問題編（場合の数と確率・全ページ）</a>　<a href="pdf/bak-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

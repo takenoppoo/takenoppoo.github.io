@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題11 散布図と相関の読み取り | 数ラボ</title>
+<meta name="description" content="散布図と相関の読み取りの解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-bunsan.html">分散・標準偏差・相関</a> ＞ 例題11</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 11</span><span class="lsub">データの分析　散布図と相関の読み取り</span></h1>
+<div class="qbox qflex"><div class="qt"><p>次の散布図やデータについて、相関の向きと強さを答えよ。</p><p>(1) 右の散布図 (2) 点が右下がりに、直線の近くにほぼ並ぶ (3) 点が全体に散らばり、規則性がない</p></div><div class="fig"><svg viewBox="0 0 300 230" role="img" aria-label="右上がりの散布図" xmlns="http://www.w3.org/2000/svg"><line x1="34.0" y1="200.0" x2="290.0" y2="200.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><line x1="34.0" y1="200.0" x2="34.0" y2="12.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="292.0" y="218.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">x</tspan></text><text x="32.0" y="13.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">y</tspan></text><line x1="97.0" y1="200.0" x2="97.0" y2="204.0" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="97.0" y="220.1" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">2</tspan></text><line x1="160.0" y1="200.0" x2="160.0" y2="204.0" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="160.0" y="220.1" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">4</tspan></text><line x1="223.0" y1="200.0" x2="223.0" y2="204.0" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="223.0" y="220.1" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">6</tspan></text><line x1="30.0" y1="154.0" x2="34.0" y2="154.0" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="26.0" y="159.1" font-size="14.6" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">2</tspan></text><line x1="30.0" y1="108.0" x2="34.0" y2="108.0" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="26.0" y="113.1" font-size="14.6" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">4</tspan></text><line x1="30.0" y1="62.0" x2="34.0" y2="62.0" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="26.0" y="67.1" font-size="14.6" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">6</tspan></text><circle cx="65.5" cy="154.0" r="3.8" fill="#1F4E9A"/><circle cx="97.0" cy="131.0" r="3.8" fill="#1F4E9A"/><circle cx="128.5" cy="119.5" r="3.8" fill="#1F4E9A"/><circle cx="160.0" cy="85.0" r="3.8" fill="#1F4E9A"/><circle cx="191.5" cy="96.5" r="3.8" fill="#1F4E9A"/><circle cx="223.0" cy="50.5" r="3.8" fill="#1F4E9A"/><circle cx="254.5" cy="39.0" r="3.8" fill="#1F4E9A"/></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>点が<b>右上がり</b>なら正の相関、<b>右下がり</b>なら負の相関。直線に近いほど強い。規則性がなければ<b>相関がない</b>（相関係数が \(0\) に近い）。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>相関は「関係がある」であって「原因と結果」ではない。相関が強くても、因果関係があるとは限らない。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1)</div><div class="step-b"><p>点が右上がりに並ぶ。<b>正の相関</b>（かなり強い）。相関係数は \(1\) に近い</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (2)</div><div class="step-b"><p>右下がり。<b>強い負の相関</b>。相関係数は \(-1\) に近い</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (3)</div><div class="step-b"><b>ほとんど相関がない</b>。相関係数は \(0\) に近い</div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ \text{強い正の相関}\quad(2)\ \text{強い負の相関}\quad(3)\ \text{相関なし} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 11</h2><p class="pask-h">次を答えよ。</p><ol class="prac"><li>点が右上がりに、やや広くばらついて並ぶ</li><li>点が右下がりに、直線にぴったり並ぶ</li><li>点が円のように広く散らばる</li></ol></section>
+
+<p><a class="btn" href="kaito-dat26.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="dat24.html">← 前の例題</a><a href="dat27.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/data-mondai.pdf">問題編（データの分析・全ページ）</a>　<a href="pdf/data-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>
