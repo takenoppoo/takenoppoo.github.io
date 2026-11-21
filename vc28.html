@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題14 四面体の重心・平行六面体の頂点 | 数ラボ</title>
+<meta name="description" content="四面体の重心・平行六面体の頂点の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-C.html">数学C</a> ＞ <a href="unit-kukan-vec.html">空間ベクトル</a> ＞ 例題14</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 14</span><span class="lsub">ベクトル　四面体の重心・平行六面体の頂点</span></h1>
+<div class="qbox"><div class="qt"><p>次を求めよ。</p><p>(1) \(A(1,0,0),\ B(0,2,0),\ C(0,0,3),\ D(1,2,3)\) を頂点とする四面体の重心　(2) \(\triangle ABC\) の重心　(3) 平行四辺形 \(ABCD\) で \(A(0,0,0),\ B(2,1,0),\ D(0,2,1)\) のとき、頂点 \(C\) の座標</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>重心は、<b>座標の平均</b>：四面体は \(\dfrac{\vec a+\vec b+\vec c+\vec d}4\)、三角形は \(\dfrac{\vec a+\vec b+\vec c}3\)。</li><li>平行四辺形 \(ABCD\)：\(\vec c=\vec b+\vec d-\vec a\)。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>平行四辺形の頂点は、「向かい合う頂点の和が等しい」：\(A+C=B+D\)。空間でも同じ。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 各座標の平均</div><div class="step-b"><p>\(x=\dfrac{1+0+0+1}4=\dfrac12,\ y=\dfrac{0+2+0+2}4=1,\ z=\dfrac{0+0+3+3}4=\dfrac32\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (2) 各座標の平均</div><div class="step-b"><p>\(x=\dfrac{1+0+0}3=\dfrac13,\ y=\dfrac{0+2+0}3=\dfrac23,\ z=\dfrac{0+0+3}3=1\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (3) 対角線の中点</div><div class="step-b"><p>\(C=B+D-A=(2+0-0,\ 1+2-0,\ 0+1-0)=(2,\,3,\,1)\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ \left(\tfrac12,1,\tfrac32\right)\qquad(2)\ \left(\tfrac13,\tfrac23,1\right)\qquad(3)\ C(2,3,1) \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 14</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>\(A(2,0,0)\), \(B(0,4,0)\), \(C(0,0,6)\), \(D(0,0,0)\) を頂点とする四面体の重心</li><li>\(A(2,0,0)\), \(B(0,4,0)\), \(C(0,0,6)\) を頂点とする三角形の重心</li><li>平行四辺形 \(ABCD\) で \(A(1,1,0)\), \(B(3,2,1)\), \(D(0,4,2)\) のとき、頂点 \(C\) の座標</li></ol></section>
+
+<p><a class="btn" href="kaito-vc28.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="vc27.html">← 前の例題</a><a href="vc-shomatsu.html">章末問題へ →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/vc-mondai.pdf">問題編（ベクトル・全ページ）</a>　<a href="pdf/vc-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>
