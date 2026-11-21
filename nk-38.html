@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題3 おき換えを使った最大・最小 | 数ラボ</title>
+<meta name="description" content="おき換えを使った最大・最小の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-nk-maxmin.html">2次関数の最大・最小</a> ＞ 例題3</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 3</span><span class="lsub">2次関数　おき換えを使った最大・最小</span></h1>
+<div class="qbox qflex"><div class="qt"><p>次の関数の最大値・最小値があれば求めよ。</p><p>(1) \(y=x^4-4x^2+3\) (2) \(y=(x^2-2x)^2-4(x^2-2x)+1\)</p></div><div class="fig"><svg viewBox="0 0 330 230" role="img" aria-label="y=x⁴−4x²+3 のグラフ" xmlns="http://www.w3.org/2000/svg"><line x1="28.0" y1="147.0" x2="320.0" y2="147.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><line x1="166.4" y1="210.0" x2="166.4" y2="8.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><polygon points="325.0,147.0 317.0,143.5 317.0,150.5" fill="#444"/><polygon points="166.4,3.0 162.9,11.0 169.9,11.0" fill="#444"/><text x="322.0" y="165.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">x</tspan></text><text x="157.4" y="15.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">y</tspan></text><text x="158.4" y="164.1" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">O</tspan></text><polyline fill="none" stroke="#1F4E9A" stroke-width="2.2" points="48.1,22.2 49.3,33.7 50.5,44.7 51.6,55.1 52.8,65.1 54.0,74.5 55.1,83.4 56.3,91.8 57.5,99.8 58.7,107.3 59.9,114.3 61.0,120.9 62.2,127.1 63.4,132.9 64.5,138.2 65.7,143.2 66.9,147.8 68.1,152.0 69.2,155.9 70.4,159.4 71.6,162.6 72.8,165.5 74.0,168.1 75.1,170.3 76.3,172.3 77.5,174.0 78.7,175.4 79.8,176.5 81.0,177.4 82.2,178.0 83.3,178.5 84.5,178.7 85.7,178.6 86.9,178.4 88.0,178.0 89.2,177.4 90.4,176.6 91.6,175.6 92.8,174.5 93.9,173.2 95.1,171.8 96.3,170.2 97.4,168.5 98.6,166.7 99.8,164.8 101.0,162.8 102.2,160.6 103.3,158.4 104.5,156.1 105.7,153.7 106.8,151.2 108.0,148.7 109.2,146.2 110.4,143.5 111.5,140.9 112.7,138.1 113.9,135.4 115.1,132.6 116.2,129.8 117.4,127.0 118.6,124.2 119.8,121.4 121.0,118.6 122.1,115.8 123.3,113.0 124.5,110.2 125.7,107.5 126.8,104.7 128.0,102.0 129.2,99.4 130.3,96.8 131.5,94.2 132.7,91.6 133.9,89.2 135.1,86.7 136.2,84.4 137.4,82.1 138.6,79.8 139.8,77.6 140.9,75.5 142.1,73.5 143.3,71.6 144.4,69.7 145.6,67.9 146.8,66.2 148.0,64.6 149.1,63.1 150.3,61.7 151.5,60.3 152.7,59.1 153.8,57.9 155.0,56.9 156.2,55.9 157.4,55.1 158.6,54.3 159.7,53.7 160.9,53.1 162.1,52.7 163.2,52.4 164.4,52.1 165.6,52.0 166.8,52.0 167.9,52.1 169.1,52.3 170.3,52.6 171.5,53.0 172.6,53.5 173.8,54.1 175.0,54.8 176.2,55.7 177.4,56.6 178.5,57.6 179.7,58.7 180.9,59.9 182.1,61.2 183.2,62.6 184.4,64.1 185.6,65.7 186.8,67.4 187.9,69.1 189.1,71.0 190.3,72.9 191.4,74.9 192.6,77.0 193.8,79.1 195.0,81.4 196.2,83.7 197.3,86.0 198.5,88.4 199.7,90.9 200.8,93.4 202.0,96.0 203.2,98.6 204.4,101.2 205.6,103.9 206.7,106.6 207.9,109.4 209.1,112.2 210.2,114.9 211.4,117.7 212.6,120.6 213.8,123.4 214.9,126.2 216.1,129.0 217.3,131.8 218.5,134.6 219.7,137.3 220.8,140.0 222.0,142.7 223.2,145.4 224.3,147.9 225.5,150.5 226.7,153.0 227.9,155.4 229.1,157.7 230.2,159.9 231.4,162.1 232.6,164.2 233.8,166.1 234.9,168.0 236.1,169.7 237.3,171.3 238.4,172.8 239.6,174.1 240.8,175.3 242.0,176.3 243.1,177.1 244.3,177.8 245.5,178.3 246.7,178.6 247.8,178.7 249.0,178.5 250.2,178.2 251.4,177.6 252.6,176.8 253.7,175.7 254.9,174.4 256.1,172.8 257.2,170.9 258.4,168.8 259.6,166.3 260.8,163.5 261.9,160.5 263.1,157.0 264.3,153.3 265.5,149.1 266.6,144.7 267.8,139.8 269.0,134.6 270.2,128.9 271.3,122.9 272.5,116.4 273.7,109.5 274.9,102.1 276.0,94.3 277.2,86.0 278.4,77.3 279.6,68.0 280.8,58.2 281.9,47.9 283.1,37.1 284.3,25.8 285.5,13.8"/><text x="282.6" y="73.3" font-size="15.9" text-anchor="start" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#1F4E9A"><tspan dy="0.0">y=x⁴−4x²+3</tspan></text><circle cx="85.0" cy="178.7" r="3.6" fill="#c0283c"/><text x="79.0" y="198.2" font-size="15.9" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">(−√2, −1)</tspan></text><circle cx="247.8" cy="178.7" r="3.6" fill="#c0283c"/><text x="253.8" y="198.2" font-size="15.9" text-anchor="start" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">(√2, −1)</tspan></text></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>くり返し出てくる式を \(t\) とおき、<b>\(t\) の2次関数</b>にする。</li><li>\(t\) のとりうる範囲（<b>\(t\) の定義域</b>）を必ず調べる。\(t=x^2\) なら \(t\geqq0\)。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>\(t=x^2\) のおき換えでは、\(t\) の最小値が \(0\) で止まる。<b>頂点の \(t\) が範囲外</b>なら、端（\(t\) の最小値）で最小になる。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) おき換える</div><div class="step-b"><p>\(t=x^2\) とおくと \(t\geqq0\)。\(y=t^2-4t+3=(t-2)^2-1\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (1) 最大・最小</div><div class="step-b"><p>\(t=2\)（\(x=\pm\sqrt2\)）で最小値 \(-1\)。\(t\) はいくらでも大きくなれるので最大値はない</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (2) おき換える</div><div class="step-b"><p>\(t=x^2-2x=(x-1)^2-1\) とおくと \(t\geqq-1\)。\(y=t^2-4t+1=(t-2)^2-3\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (2) 最大・最小</div><div class="step-b"><p>\(t=2\) は \(t\geqq-1\) に入る。最小値 \(-3\)（\(x^2-2x=2\) より \(x=1\pm\sqrt3\)）。最大値はない</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ \text{最小値 }-1\ (x=\pm\sqrt2),\ \text{最大値なし}\quad(2)\ \text{最小値 }-3\ (x=1\pm\sqrt3),\ \text{最大値なし} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 3</h2><ol class="prac"><li>関数 \(y=x^4-2x^2+3\) の最大値・最小値があれば求めよ。</li><li>関数 \(y=-x^4+4x^2+1\) の最大値・最小値があれば求めよ。</li><li>関数 \(y=(x^2+2x)^2+2(x^2+2x)-1\) の最大値・最小値があれば求めよ。</li></ol></section>
+
+<p><a class="btn" href="kaito-nk-38.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="nk-35.html">← 前の例題</a><a href="nk-12.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/nk-mondai.pdf">問題編（2次関数・全ページ）</a>　<a href="pdf/nk-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

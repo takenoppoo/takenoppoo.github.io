@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題4 部分集合の個数 | 数ラボ</title>
+<meta name="description" content="部分集合の個数の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-shugo.html">集合</a> ＞ 例題4</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 4</span><span class="lsub">第2章　集合と命題　部分集合の個数</span></h1>
+<div class="qbox"><div class="qt"><p>集合 \(A=\{a,\ b,\ c,\ d\}\) について、(1) 部分集合は全部で何個あるか。(2) 要素 \(a\) を含む部分集合は何個あるか。(3) 要素を 2 個もつ部分集合は何個あるか。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>要素が \(n\) 個の集合の部分集合は全部で<b>\(2^n\) 個</b>（空集合と自分自身を含む）。各要素について「入れる・入れない」の2通り。</li><li>特定の要素を<b>含む</b>（または含まない）部分集合は、その要素を決めて<b>残りの \(n-1\) 個</b>で \(2^{n-1}\) 個。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>\(2^n\) には<b>空集合</b>と<b>\(A\) 自身</b>も数えている。「真部分集合」なら \(A\) 自身を除く。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 各要素 2 通り</div><div class="step-b"><p>\(2\times2\times2\times2=2^4=16\)（個）</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (2) \(a\) を決める</div><div class="step-b"><p>\(a\) は入れると決まっている。残り \(b,c,d\) の 3 個で \(2^3=8\)（個）</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (3) 書き出す</div><div class="step-b"><p>\(\{a,b\},\{a,c\},\{a,d\},\{b,c\},\{b,d\},\{c,d\}\) の 6 個</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ 16\text{ 個}\quad(2)\ 8\text{ 個}\quad(3)\ 6\text{ 個} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 4</h2><p class="pask-h">次を求めよ。</p><ol class="prac dec"><li>\(A=\{1,2,3,4,5\}\) について、(1) 部分集合は全部で何個か。(2) 要素 \(1\) を含む部分集合は何個か。</li><li>\(A=\{a,b,c,d,e,f\}\) について、(1) 部分集合は全部で何個か。(2) 要素 \(b\), \(c\) をどちらも含まない部分集合は何個か。</li><li>\(A=\{1,2,3,4\}\) について、要素を 3 個もつ部分集合は何個か。また、要素を 1 個もつ部分集合は何個か。</li></ol></section>
+
+<p><a class="btn" href="kaito-ch2-22.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="ch2-2.html">← 前の例題</a><a href="ch2-3.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/ch2-mondai.pdf">問題編（第2章　集合と命題・全ページ）</a>　<a href="pdf/ch2-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>
