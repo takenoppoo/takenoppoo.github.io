@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題11 何項目か（項数を求める） | 数ラボ</title>
+<meta name="description" content="何項目か（項数を求める）の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-B.html">数学B</a> ＞ <a href="unit-tobi-nitto.html">等差数列・等比数列</a> ＞ 例題11</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 11</span><span class="lsub">数列　何項目か（項数を求める）</span></h1>
+<div class="qbox"><div class="qt"><p>(1) 等比数列 \(3\), \(6\), \(12\), \(\cdots\) で \(384\) は第何項か。(2) 等差数列 \(5\), \(8\), \(11\), \(\cdots\) で \(200\) は第何項か。(3) 等差数列 \(100\), \(96\), \(92\), \(\cdots\) で初めて負になるのは第何項か。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>一般項を求めて、<b>その値になる \(n\) を方程式（不等式）で解く</b>。\(n\) は自然数であることを確認。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>「初めて負（正）になる」は不等式。ちょうど0になる項があるときは、その次の項。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 一般項</div><div class="step-b"><p>\(a_n=3\cdot2^{n-1}=384\) より \(2^{n-1}=128=2^7\)。\(n=8\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (2) 一般項</div><div class="step-b"><p>\(a_n=5+3(n-1)=3n+2=200\) より \(n=66\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (3) 一般項</div><div class="step-b"><p>\(a_n=100-4(n-1)=104-4n<0\) より \(n>26\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (3) 結論</div><div class="step-b"><p>最小の自然数 \(n=27\)（\(a_{26}=0\)、\(a_{27}=-4\)）</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ \text{第8項}\quad(2)\ \text{第66項}\quad(3)\ \text{第27項} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 11</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>等比数列 \(2\), \(6\), \(18\), \(\cdots\) で \(486\)</li><li>等差数列 \(7\), \(10\), \(13\), \(\cdots\) で \(100\)</li><li>等差数列 \(80\), \(75\), \(70\), \(\cdots\) で初めて負になる項</li></ol></section>
+
+<p><a class="btn" href="kaito-sr21.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="sr20.html">← 前の例題</a><a href="sr22.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/sr-mondai.pdf">問題編（数列・全ページ）</a>　<a href="pdf/sr-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題11 自然対数の底 \(e\) の極限 | 数ラボ</title>
+<meta name="description" content="自然対数の底 \(e\) の極限の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-3.html">数学III</a> ＞ <a href="unit-kansu-kyokugen.html">関数の極限・連続</a> ＞ 例題11</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 11</span><span class="lsub">極限　自然対数の底 \(e\) の極限</span></h1>
+<div class="qbox"><div class="qt"><p>次を求めよ。</p><p>(1) \(\displaystyle\lim_{x\to0}(1+x)^{\frac1x}\)　(2) \(\displaystyle\lim_{x\to\infty}\left(1+\dfrac1x\right)^x\)　(3) \(\displaystyle\lim_{x\to0}(1+2x)^{\frac1x}\)</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2>\[ \lim_{x\to0}(1+x)^{\frac1x}=e=\lim_{x\to\infty}\left(1+\frac1x\right)^x \]<ul><li>(3) は、指数を \(\dfrac1{2x}\cdot2\) と分けて、\(\{(1+2x)^{\frac1{2x}}\}^2\) にする。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>\((1+\square)^{\frac1\square}\) の形（□が同じもの）をつくるのが目標。余った指数は、外に出す。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1)</div><div class="step-b"><p>定義どおり \(e\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (2)</div><div class="step-b"><p>\(x\to\infty\) 版の定義。\(e\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (3) 指数をつくる</div><div class="step-b"><p>\((1+2x)^{\frac1x}=\left\{(1+2x)^{\frac1{2x}}\right\}^2\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (3) 極限</div><div class="step-b"><p>\(2x\to0\) なので \(\to e^2\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ e\qquad(2)\ e\qquad(3)\ e^2 \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 11</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>\(\displaystyle\lim_{x\to0}(1+3x)^{\frac1x}\)</li><li>\(\displaystyle\lim_{x\to\infty}\left(1+\dfrac2x\right)^x\)</li><li>\(\displaystyle\lim_{x\to0}(1-x)^{\frac1x}\)</li></ol></section>
+
+<p><a class="btn" href="kaito-g339.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="g338.html">← 前の例題</a><a href="g340.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/g3-mondai.pdf">問題編（極限・全ページ）</a>　<a href="pdf/g3-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

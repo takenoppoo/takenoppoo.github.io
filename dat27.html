@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題12 共分散の計算 | 数ラボ</title>
+<meta name="description" content="共分散の計算の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-bunsan.html">分散・標準偏差・相関</a> ＞ 例題12</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 12</span><span class="lsub">データの分析　共分散の計算</span></h1>
+<div class="qbox"><div class="qt"><p>5人の2つのテストの得点を \(x\)：1, 2, 3, 4, 5、\(y\)：1, 3, 2, 5, 4 とする。\(x\) と \(y\) の共分散を求めよ。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2>\[ s_{xy}=\dfrac1n\sum(x-\bar x)(y-\bar y) \quad(\text{偏差の積の平均}) \]<ul><li>平均を求め、各データの<b>偏差の積</b>を計算して平均する。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>共分散が正なら正の相関、負なら負の相関。ただし、単位によって大きさが変わるので、強さは相関係数で比べる。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 平均</div><div class="step-b"><p>\(\bar x=3,\ \ \bar y=3\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 偏差</div><div class="step-b"><p>\(x-\bar x:\ -2,-1,0,1,2\)　\(y-\bar y:\ -2,0,-1,2,1\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 偏差の積</div><div class="step-b"><p>\(4,\ 0,\ 0,\ 2,\ 2\)。合計 \(8\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> 共分散</div><div class="step-b"><p>\(\dfrac85=1.6\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ s_{xy}=\dfrac85 \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 12</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>\(x\)：1, 2, 3, 4, 5、\(y\)：5, 4, 3, 2, 1</li><li>\(x\)：2, 4, 6, 8、\(y\)：5, 4, 2, 1</li><li>\(x\)：1, 2, 3, 4, 5、\(y\)：1, 3, 2, 5, 4（上の例題と同じ）の \(y\) を 2倍にしたとき</li></ol></section>
+
+<p><a class="btn" href="kaito-dat27.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="dat26.html">← 前の例題</a><a href="dat28.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/data-mondai.pdf">問題編（データの分析・全ページ）</a>　<a href="pdf/data-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>
