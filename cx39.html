@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題11 3点の位置関係（一直線・垂直・角） | 数ラボ</title>
+<meta name="description" content="3点の位置関係（一直線・垂直・角）の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-C.html">数学C</a> ＞ <a href="unit-fukuso-heimen.html">複素数平面</a> ＞ 例題11</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 11</span><span class="lsub">平面上の曲線と複素数平面　3点の位置関係（一直線・垂直・角）</span></h1>
+<div class="qbox"><div class="qt"><p>(1) \(\alpha=0\), \(\beta=2+i\), \(\gamma=-1+2i\) のとき \(\dfrac\gamma\beta\) を求め、\(\triangle OBC\) の形を答えよ。(2) \(\alpha=1+i\), \(\beta=3+3i\), \(\gamma=-1-i\) は一直線上にあるか。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>\(\dfrac{\gamma-\alpha}{\beta-\alpha}\) が<b>実数</b> \(\iff\) 3点は一直線上。<b>純虚数</b> \(\iff\) \(AB\perp AC\)。</li><li>この商の絶対値は辺の比 \(AC:AB\)、偏角は \(\angle BAC\)。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>商の偏角は「\(\gamma\) の偏角 \(-\) \(\beta\) の偏角」。向きをまちがえないよう、分子が終点側の点。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 商を計算</div><div class="step-b"><p>\(\dfrac{-1+2i}{2+i}=\dfrac{(-1+2i)(2-i)}5=\dfrac{-2+i+4i+2}5=i\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (1) 意味</div><div class="step-b"><p>純虚数なので \(OB\perp OC\)。絶対値 \(1\) より \(OB=OC\)。直角二等辺三角形</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (2) 商を計算</div><div class="step-b"><p>\(\dfrac{\gamma-\alpha}{\beta-\alpha}=\dfrac{-2-2i}{2+2i}=-1\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (2) 結論</div><div class="step-b"><p>実数なので一直線上（\(A\) は \(B,C\) の中点）</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ \dfrac\gamma\beta=i,\ \text{直角二等辺三角形}\qquad(2)\ \text{一直線上にある} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 11</h2><p class="pask-h">次を答えよ。</p><ol class="prac"><li>\(\alpha=0\), \(\beta=3+i\), \(\gamma=-1+3i\) のとき \(\dfrac\gamma\beta\) と \(\triangle OBC\) の形</li><li>\(\alpha=0\), \(\beta=1+i\), \(\gamma=3+3i\) は一直線上にあるか</li><li>\(\alpha=0\), \(\beta=2\), \(\gamma=1+\sqrt3i\) のとき \(\dfrac\gamma\beta\) の偏角（\(\angle BOC\)）</li></ol></section>
+
+<p><a class="btn" href="kaito-cx39.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="cx38.html">← 前の例題</a><a href="cx40.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/cx-mondai.pdf">問題編（平面上の曲線と複素数平面・全ページ）</a>　<a href="pdf/cx-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>
