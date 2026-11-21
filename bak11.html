@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題4 順列（数字の並べ方・隣り合わない・両端） | 数ラボ</title>
+<meta name="description" content="順列（数字の並べ方・隣り合わない・両端）の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-A.html">数学A</a> ＞ <a href="unit-kazu.html">場合の数（順列・組合せ）</a> ＞ 例題4</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 4</span><span class="lsub">場合の数と確率　順列（数字の並べ方・隣り合わない・両端）</span></h1>
+<div class="qbox"><div class="qt"><p>(1) 0, 1, 2, 3 から異なる3個を選んでつくる3桁の整数は何個あるか。(2) 男子3人、女子2人が1列に並ぶとき、女子2人が隣り合わない並べ方は何通りか。(3) 6人が1列に並ぶとき、特定の2人 \(A\), \(B\) が両端にくる並べ方は何通りか。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li>条件のある位置（0以外・両端）から<b>先に</b>決める。</li><li>「隣り合わない」は、<b>先に条件のないものを並べ</b>、その間と両端に入れる。</li></ul><div class="tip"><span class="tip-h">コツ</span><p>0を含む整数は、先頭に0を置かない。「0が先頭の場合を引く」やり方でも同じ答えになる（\(4\times4\times3\) と \(5\mathrm P_3-4\mathrm P_2\)）。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 百の位</div><div class="step-b"><p>\(0\) は使えない：\(3\) 通り</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (1) 十・一の位</div><div class="step-b"><p>残り3個から2個を並べる：\(3\times2=6\)。\(3\times6=18\)（個）</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (2) 男子を並べる</div><div class="step-b"><p>\(3!=6\)（通り）。男子の間と両端の \(4\) か所が女子の入る場所</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (2) 女子を入れる</div><div class="step-b"><p>\(4\) か所から2か所を選んで並べる：\({}_4\mathrm P_2=12\)。\(6\times12=72\)（通り）</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 5</span> (3) 両端を決める</div><div class="step-b"><p>\(A,B\) の入れかえ \(2!=2\)。残り4人は \(4!=24\)。\(2\times24=48\)（通り）</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ 18\text{ 個}\qquad(2)\ 72\text{ 通り}\qquad(3)\ 48\text{ 通り} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 4</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>0, 1, 2, 3, 4 から異なる3個を選んでつくる3桁の整数の個数</li><li>男子2人、女子3人が1列に並ぶとき、女子3人がどの2人も隣り合わない並べ方</li><li>5人が1列に並ぶとき、特定の2人 \(A\), \(B\) が両端にくる並べ方</li></ol></section>
+
+<p><a class="btn" href="kaito-bak11.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="bak02.html">← 前の例題</a><a href="bak03.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/bak-mondai.pdf">問題編（場合の数と確率・全ページ）</a>　<a href="pdf/bak-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>
