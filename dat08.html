@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題4 相関係数を求める | 数ラボ</title>
+<meta name="description" content="相関係数を求めるの解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-1.html">数学I</a> ＞ <a href="unit-bunsan.html">分散・標準偏差・相関</a> ＞ 例題4</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 4</span><span class="lsub">データの分析　相関係数を求める</span></h1>
+<div class="qbox qflex"><div class="qt"><p>5人の2つの科目の得点 \((x\), \(y)\) が \((1,2)\), \((2,3)\), \((3,5)\), \((4,4)\), \((5,6)\) のとき、共分散 \(s_{xy}\)、相関係数 \(r\) を求めよ。</p></div><div class="fig"><svg viewBox="0 0 300 230" role="img" aria-label="散布図（赤は平均）" xmlns="http://www.w3.org/2000/svg"><line x1="34.0" y1="200.0" x2="290.0" y2="200.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><line x1="34.0" y1="200.0" x2="34.0" y2="12.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="292.0" y="218.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">x</tspan></text><text x="32.0" y="13.6" font-size="15.9" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"><tspan dy="0.0">y</tspan></text><line x1="76.0" y1="200.0" x2="76.0" y2="204.0" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="76.0" y="220.1" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">1</tspan></text><line x1="118.0" y1="200.0" x2="118.0" y2="204.0" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="118.0" y="220.1" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">2</tspan></text><line x1="160.0" y1="200.0" x2="160.0" y2="204.0" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="160.0" y="220.1" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">3</tspan></text><line x1="202.0" y1="200.0" x2="202.0" y2="204.0" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="202.0" y="220.1" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">4</tspan></text><line x1="244.0" y1="200.0" x2="244.0" y2="204.0" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="244.0" y="220.1" font-size="14.6" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">5</tspan></text><line x1="30.0" y1="173.7" x2="34.0" y2="173.7" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="26.0" y="178.8" font-size="14.6" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">1</tspan></text><line x1="30.0" y1="147.4" x2="34.0" y2="147.4" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="26.0" y="152.6" font-size="14.6" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">2</tspan></text><line x1="30.0" y1="121.1" x2="34.0" y2="121.1" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="26.0" y="126.3" font-size="14.6" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">3</tspan></text><line x1="30.0" y1="94.9" x2="34.0" y2="94.9" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="26.0" y="100.0" font-size="14.6" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">4</tspan></text><line x1="30.0" y1="68.6" x2="34.0" y2="68.6" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="26.0" y="73.7" font-size="14.6" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">5</tspan></text><line x1="30.0" y1="42.3" x2="34.0" y2="42.3" stroke="#444" stroke-width="1.2" stroke-linecap="round"/><text x="26.0" y="47.4" font-size="14.6" text-anchor="end" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222"><tspan dy="0.0">6</tspan></text><circle cx="76.0" cy="147.4" r="3.8" fill="#1F4E9A"/><circle cx="118.0" cy="121.1" r="3.8" fill="#1F4E9A"/><circle cx="160.0" cy="68.6" r="3.8" fill="#1F4E9A"/><circle cx="202.0" cy="94.9" r="3.8" fill="#1F4E9A"/><circle cx="244.0" cy="42.3" r="3.8" fill="#1F4E9A"/><circle cx="160.0" cy="94.9" r="4.6" fill="#c0283c"/></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2>\[ s_{xy}=\frac{(x_1-\overline x)(y_1-\overline y)+\cdots+(x_n-\overline x)(y_n-\overline y)}{n},\qquad r=\frac{s_{xy}}{s_xs_y} \]
+<p>\(-1\leqq r\leqq1\)。\(r\) が \(1\) に近いほど正の相関が強く、\(-1\) に近いほど負の相関が強く、\(0\) に近いほど相関が弱い。</p>
+<p>手順は、<b>平均 → 偏差の表 → \(s_x^2,\ s_y^2,\ s_{xy}\) → \(r\)</b>。</p><div class="tip"><span class="tip-h">コツ</span><p>偏差の積の符号を見ると、符号がそろう点が多いか、逆の点が多いかで、正負の相関がわかる。計算の前に散布図で向きを予想しておく。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 平均</div><div class="step-b"><p>\(\overline x=3,\ \overline y=4\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 偏差を並べる</div><div class="step-b"><p>\(x-\overline x:-2,-1,0,1,2\)　\(y-\overline y:-2,-1,1,0,2\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 分散・共分散</div><div class="step-b"><p>\(s_x^2=\frac{4+1+0+1+4}5=2\)、\(s_y^2=\frac{4+1+1+0+4}5=2\)、\(s_{xy}=\frac{4+1+0+0+4}5=\frac95\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> 相関係数</div><div class="step-b"><p>\(r=\dfrac{9/5}{\sqrt2\cdot\sqrt2}=\dfrac{9}{10}=0.9\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ s_{xy}=\frac95,\qquad r=0.9\ (\text{強い正の相関}) \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 4</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>\((x,y)\) が \((1,5),(2,4),(3,3),(4,1),(5,2)\) のときの共分散と相関係数</li><li>\((x,y)\) が \((1,3),(2,5),(3,4),(4,7),(5,6)\) のときの共分散と相関係数</li><li>\((x,y)\) が \((1,2),(2,1),(3,4),(4,3)\) のときの共分散と相関係数</li></ol></section>
+
+<p><a class="btn" href="kaito-dat08.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="dat07.html">← 前の例題</a><a href="dat09.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/data-mondai.pdf">問題編（データの分析・全ページ）</a>　<a href="pdf/data-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

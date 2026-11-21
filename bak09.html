@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題3 原因の確率 | 数ラボ</title>
+<meta name="description" content="原因の確率の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-A.html">数学A</a> ＞ <a href="unit-joken.html">条件付き確率・期待値</a> ＞ 例題3</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 3</span><span class="lsub">場合の数と確率　原因の確率</span></h1>
+<div class="qbox qflex"><div class="qt"><p>袋Aには赤玉3個・白玉2個、袋Bには赤玉1個・白玉4個が入っている。いずれかの袋を無作為に選び、その袋から玉を1個取り出す。(1) 赤玉が出る確率を求めよ。(2) 赤玉が出たとき、それが袋Aの玉である確率を求めよ。</p></div><div class="fig"><svg viewBox="0 0 300 200" role="img" aria-label="袋を選んで玉を取り出す樹形図" xmlns="http://www.w3.org/2000/svg"><text x="18.0" y="106.4" font-size="18.3" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222"></text><line x1="32.0" y1="100.0" x2="116.0" y2="50.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="76.0" y="71.3" font-size="15.25" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#1F4E9A">1/2</text><text x="128.0" y="56.4" font-size="18.3" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222">A</text><line x1="140.0" y1="50.0" x2="226.0" y2="25.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="186.0" y="33.8" font-size="15.25" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#1F4E9A">3/5</text><text x="242.0" y="31.0" font-size="17.08" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222">赤</text><line x1="140.0" y1="50.0" x2="226.0" y2="75.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="186.0" y="58.8" font-size="15.25" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#1F4E9A">2/5</text><text x="242.0" y="81.0" font-size="17.08" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222">白</text><line x1="32.0" y1="100.0" x2="116.0" y2="150.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="76.0" y="121.3" font-size="15.25" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#1F4E9A">1/2</text><text x="128.0" y="156.4" font-size="18.3" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222">B</text><line x1="140.0" y1="150.0" x2="226.0" y2="125.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="186.0" y="133.8" font-size="15.25" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#1F4E9A">1/5</text><text x="242.0" y="131.0" font-size="17.08" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222">赤</text><line x1="140.0" y1="150.0" x2="226.0" y2="175.0" stroke="#444" stroke-width="1.4" stroke-linecap="round"/><text x="186.0" y="158.8" font-size="15.25" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#1F4E9A">4/5</text><text x="242.0" y="181.0" font-size="17.08" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222">白</text></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>結果（赤玉が出た）から原因（どの袋か）をさかのぼる確率は、条件付き確率で求める。</p>
+\[ P_{\text{赤}}(A)=\frac{P(A\text{ を選び赤)}}{P(\text{赤})} \]
+<p>手順は、<b>① 樹形図をかく → ② 結果が起こる確率を足す → ③ 原因の分だけを分子にして割る</b>。</p><div class="tip"><span class="tip-h">コツ</span><p>分母は「結果が起こる全部の場合」（赤になる2通りの合計）、分子は「その中の原因の1つ」。逆にしない。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 赤玉が出る確率</div><div class="step-b"><p>Aを選んで赤：\(\dfrac12\cdot\dfrac35=\dfrac3{10}\)。Bを選んで赤：\(\dfrac12\cdot\dfrac15=\dfrac1{10}\)。合わせて \(\dfrac4{10}=\dfrac25\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (2) 分子と分母</div><div class="step-b"><p>分子は「Aを選び赤」\(=\dfrac3{10}\)、分母は「赤」\(=\dfrac25\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (2) 割る</div><div class="step-b"><p>\(\dfrac{3/10}{2/5}=\dfrac34\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ \frac12\cdot\frac35+\frac12\cdot\frac15=\frac25\qquad(2)\ \frac{3/10}{2/5}=\frac34 \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 3</h2><p class="pask-h">次を求めよ。</p><ol class="prac dec"><li>袋Aには赤4個・白1個、袋Bには赤2個・白3個。いずれかの袋を無作為に選んで1個取り出す。(1) 赤玉が出る確率　(2) 赤玉が出たとき袋Aである確率</li><li>製品の60%が工場A、40%が工場B。不良率はAが2%、Bが5%。(1) 無作為に選んだ製品が不良品である確率　(2) 不良品だったとき工場Aの製品である確率</li><li>箱Xは当たりが全体の \(\dfrac14\)、箱Yは \(\dfrac12\)。いずれかの箱を無作為に選んで1回引く。(1) 当たる確率　(2) 当たったとき箱Xである確率</li></ol></section>
+
+<p><a class="btn" href="kaito-bak09.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="bak08.html">← 前の例題</a><a href="bak-shomatsu.html">章末問題へ →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/bak-mondai.pdf">問題編（場合の数と確率・全ページ）</a>　<a href="pdf/bak-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

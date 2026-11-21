@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>入試レベル問題の解答（場合の数と確率） | 数ラボ</title>
+<meta name="description" content="場合の数と確率の入試レベル問題の解答。手順と答案つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="bak-nyushi.html">入試レベル問題</a> ＞ 解答（別冊）</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る --><h1 class="lh"><span class="lbadge">別冊</span><span class="lsub">入試レベル問題の解答　場合の数と確率</span></h1><section class="bar navy"><h2>入試レベル (1)</h2>
+<div class="srow"><div class="stx"><p class="pq">6人が円形に座るとき、特定の2人A, Bが隣り合う座り方は何通りか。</p>
+<p><b>手順</b>　A,Bを1組にして5つの円順列：\((5-1)!=24\)。組の中の並べ方 \(2!=2\)。\(48\)（場合の数（順列・組合せ）の例題2）。</p></div></div>
+<div class="abox sm"><p class="ah">【答案（テストに書く形）】</p>\[ 48 \]<p class="ans-mark">答</p></div></section><section class="bar navy"><h2>入試レベル (2)</h2>
+<div class="srow"><div class="stx"><p class="pq">さいころを5回投げて、1の目が出る回数が3回以上である確率を求めよ。</p>
+<p><b>手順</b>　3回、4回、5回の和：\({}_5\mathrm C_3\frac{25}{6^5}+{}_5\mathrm C_4\frac5{6^5}+\frac1{6^5}=\frac{250+25+1}{7776}=\frac{276}{7776}=\frac{23}{648}\)（確率の例題3）。</p></div></div>
+<div class="abox sm"><p class="ah">【答案（テストに書く形）】</p>\[ \frac{23}{648} \]<p class="ans-mark">答</p></div></section><section class="bar navy"><h2>入試レベル (3)</h2>
+<div class="srow"><div class="stx"><p class="pq">A, B二人が先に3勝したほうを優勝とする試合を行う。1試合ごとにAが勝つ確率は \(\dfrac23\)（引き分けなし）。Aが優勝する確率を求めよ。</p>
+<p><b>手順</b>　3勝0敗：\(\left(\frac23\right)^3=\frac8{27}\)。3勝1敗（4試合目で決着）：\({}_3\mathrm C_2\left(\frac23\right)^2\frac13\cdot\frac23=\frac{24}{81}\)。3勝2敗：\({}_4\mathrm C_2\left(\frac23\right)^2\left(\frac13\right)^2\cdot\frac23=\frac{48}{243}\)。合計 \(\frac{72+72+48}{243}=\frac{64}{81}\)（確率の例題3）。</p></div></div>
+<div class="abox sm"><p class="ah">【答案（テストに書く形）】</p>\[ \frac{64}{81} \]<p class="ans-mark">答</p></div></section><section class="bar navy"><h2>入試レベル (4)</h2>
+<div class="srow"><div class="stx"><p class="pq">袋Aには赤1個・白3個、袋Bには赤3個・白1個。さいころを投げて、3の倍数の目が出たら袋A、それ以外なら袋Bから1個取り出す。赤玉が出る確率と、赤玉が出たとき袋Aからである確率を求めよ。</p>
+<p><b>手順</b>　A：\(\frac13\)、B：\(\frac23\)。赤：\(\frac13\cdot\frac14+\frac23\cdot\frac34=\frac1{12}+\frac6{12}=\frac7{12}\)。Aから：\(\frac{1/12}{7/12}=\frac17\)（条件付き確率・期待値の例題3）。</p></div></div>
+<div class="abox sm"><p class="ah">【答案（テストに書く形）】</p>\[ \frac7{12},\ \frac17 \]<p class="ans-mark">答</p></div></section><!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p><a class="btn" href="bak-nyushi.html">← 入試レベル問題にもどる</a></p>
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

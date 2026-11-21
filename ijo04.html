@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題1 1次不定方程式 | 数ラボ</title>
+<meta name="description" content="1次不定方程式の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-A.html">数学A</a> ＞ <a href="unit-futei.html">不定方程式・n進法</a> ＞ 例題1</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 1</span><span class="lsub">数学と人間の活動　1次不定方程式</span></h1>
+<div class="qbox"><div class="qt"><p>方程式 \(7x+5y=1\) の整数解をすべて求めよ。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>\(ax+by=c\) の整数解は、<b>① 1組の解（特殊解）を見つける → ② 辺々を引いて、互いに素な数の性質で一般解を求める</b>。</p>
+<p>互いに素な \(a,\ b\) では、\(a(x-x_0)=-b(y-y_0)\) となるので、\(x-x_0\) は \(b\) の倍数になる。</p><div class="tip"><span class="tip-h">コツ</span><p>特殊解が見つからないときは、互除法（\(a\) と \(b\) の割り算）を逆にたどる。\(k\) の符号の取り方で式の見た目は変わるが、同じ解の集まりになる。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 特殊解を見つける</div><div class="step-b"><p>\(x=3,\ y=-4\) のとき \(7\cdot3+5\cdot(-4)=1\)。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 辺々を引く</div><div class="step-b"><p>\(7x+5y=1\) から \(7\cdot3+5\cdot(-4)=1\) を引くと \(7(x-3)+5(y+4)=0\)、すなわち \(7(x-3)=-5(y+4)\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 互いに素を使う</div><div class="step-b"><p>\(7\) と \(5\) は互いに素なので、\(x-3\) は \(5\) の倍数。\(x-3=5k\)（\(k\) は整数）とおくと \(y+4=-7k\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> 一般解</div><div class="step-b"><p>\(x=5k+3,\ y=-7k-4\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ 7(x-3)=-5(y+4)\ \Rightarrow\ x=5k+3,\ y=-7k-4\quad(k\ \text{は整数}) \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 1</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>\(3x+5y=1\) の整数解</li><li>\(5x+7y=3\) の整数解（特殊解 \(5\cdot3+7\cdot(-2)=1\) を3倍する）</li><li>\(4x+9y=2\) の整数解（特殊解 \(4\cdot(-2)+9\cdot1=1\) を2倍する）</li></ol></section>
+
+<p><a class="btn" href="kaito-ijo04.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="ijo03.html">← 前の例題</a><a href="ijo05.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/ijo-mondai.pdf">問題編（数学と人間の活動・全ページ）</a>　<a href="pdf/ijo-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

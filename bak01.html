@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題1 集合の要素の個数・和の法則・積の法則 | 数ラボ</title>
+<meta name="description" content="集合の要素の個数・和の法則・積の法則の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-A.html">数学A</a> ＞ <a href="unit-kazu.html">場合の数（順列・組合せ）</a> ＞ 例題1</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 1</span><span class="lsub">場合の数と確率　集合の要素の個数・和の法則・積の法則</span></h1>
+<div class="qbox qflex"><div class="qt"><p>(1) 1から100までの整数のうち、2の倍数または3の倍数は何個あるか。<br>(2) 大小2個のさいころを投げるとき、目の和が5または9になる場合は何通りあるか。</p></div><div class="fig"><svg viewBox="0 0 290 170" role="img" aria-label="2の倍数と3の倍数" xmlns="http://www.w3.org/2000/svg"><circle cx="117.0" cy="89.0" r="52" fill="#1F4E9A" fill-opacity="0.12" stroke="#1F4E9A" stroke-width="1.6"/><circle cx="173.0" cy="89.0" r="52" fill="#d9822b" fill-opacity="0.15" stroke="#d9822b" stroke-width="1.6"/><text x="77.0" y="53.4" font-size="18.3" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222">2の倍数</text><text x="213.0" y="53.4" font-size="18.3" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="italic" font-weight="400" fill="#222">3の倍数</text><text x="87.0" y="95.4" font-size="18.3" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222">34</text><text x="145.0" y="95.4" font-size="18.3" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222">16</text><text x="203.0" y="95.4" font-size="18.3" text-anchor="middle" font-family="'Times New Roman','Liberation Serif','DejaVu Serif','Noto Serif CJK JP',serif" font-style="normal" font-weight="400" fill="#222">17</text></svg></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><ul><li><b>和集合の個数</b>：\(n(A\cup B)=n(A)+n(B)-n(A\cap B)\)</li><li><b>和の法則</b>：同時に起こらない2つの事柄が \(m\) 通りと \(n\) 通りなら、どちらかが起こるのは \(m+n\) 通り</li><li><b>積の法則</b>：続けて起こる事柄が \(m\) 通りと \(n\) 通りなら、\(m\times n\) 通り</li></ul><div class="tip"><span class="tip-h">コツ</span><p>「共通部分を引く」のを忘れない。「…でも…でもない」は、全体から和集合の個数を引く。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 2の倍数と3の倍数</div><div class="step-b"><p>2の倍数は \(50\) 個、3の倍数は \(33\) 個、両方（6の倍数）は \(16\) 個。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (1) 和集合の個数</div><div class="step-b"><p>\(n(A\cup B)=50+33-16=67\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (2) 和が5になる場合</div><div class="step-b"><p>\((1,4),(2,3),(3,2),(4,1)\) の \(4\) 通り。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (2) 和が9になる場合</div><div class="step-b"><p>\((3,6),(4,5),(5,4),(6,3)\) の \(4\) 通り。同時には起こらないので和の法則で \(4+4=8\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ 50+33-16=67\ \text{個}\qquad(2)\ 4+4=8\ \text{通り} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 1</h2><p class="pask-h">次を求めよ。</p><ol class="prac"><li>1から200までの整数のうち、3の倍数または5の倍数は何個あるか。</li><li>大小2個のさいころを投げるとき、目の和が4または11になる場合は何通りあるか。</li><li>1から150までの整数のうち、3の倍数でも7の倍数でもないものは何個あるか。</li></ol></section>
+
+<p><a class="btn" href="kaito-bak01.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="unit-kazu.html">← 目次</a><a href="bak02.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/bak-mondai.pdf">問題編（場合の数と確率・全ページ）</a>　<a href="pdf/bak-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>
