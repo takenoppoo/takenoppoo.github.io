@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題1 確率の基本（同様に確からしい） | 数ラボ</title>
+<meta name="description" content="確率の基本（同様に確からしい）の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-A.html">数学A</a> ＞ <a href="unit-kakuritsu-a.html">確率</a> ＞ 例題1</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 1</span><span class="lsub">場合の数と確率　確率の基本（同様に確からしい）</span></h1>
+<div class="qbox"><div class="qt"><p>(1) 大小2個のさいころを投げるとき、目の和が7になる確率を求めよ。<br>(2) 赤玉4個、白玉3個が入った袋から、同時に2個を取り出すとき、赤玉1個、白玉1個である確率を求めよ。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2>\[ P(A)=\frac{\text{事象 }A\text{ の起こる場合の数}}{\text{起こりうる場合の総数}} \]
+<p>どの場合も<b>同様に確からしい</b>と考えられるように、区別して数える。</p><div class="tip"><span class="tip-h">コツ</span><p>さいころや硬貨は「大小」「3枚とも区別する」と考えて、総数を数える。玉は、色の同じものでも「別の玉」と考えて組合せで数える。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> (1) 総数</div><div class="step-b"><p>\(6\times6=36\) 通り。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> (1) 和が7</div><div class="step-b"><p>\((1,6),(2,5),(3,4),(4,3),(5,2),(6,1)\) の6通り。\(\dfrac6{36}=\dfrac16\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> (2) 総数</div><div class="step-b"><p>\({}_7\mathrm C_2=21\) 通り。</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 4</span> (2) 赤1白1</div><div class="step-b"><p>\({}_4\mathrm C_1\times{}_3\mathrm C_1=12\) 通り。\(\dfrac{12}{21}=\dfrac47\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ (1)\ \frac{6}{36}=\frac16\qquad(2)\ \frac{{}_4\mathrm C_1\cdot{}_3\mathrm C_1}{{}_7\mathrm C_2}=\frac47 \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 1</h2><ol class="prac pf"><li><div class="pw"><div class="pt">大小2個のさいころを投げるとき、目の和が8になる確率を求めよ。</div></div></li><li><div class="pw"><div class="pt">赤玉5個、白玉3個が入った袋から、同時に2個を取り出すとき、2個とも赤玉である確率を求めよ。</div></div></li><li><div class="pw"><div class="pt">3枚の硬貨を投げるとき、表がちょうど2枚出る確率を求めよ。</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-bak04.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="bak03.html">← 前の例題</a><a href="bak05.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/bak-mondai.pdf">問題編（場合の数と確率・全ページ）</a>　<a href="pdf/bak-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

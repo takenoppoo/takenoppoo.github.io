@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題2 オイラーの多面体定理 | 数ラボ</title>
+<meta name="description" content="オイラーの多面体定理の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-A.html">数学A</a> ＞ <a href="unit-sakuzu.html">作図・空間図形</a> ＞ 例題2</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 2</span><span class="lsub">図形の性質　オイラーの多面体定理</span></h1>
+<div class="qbox"><div class="qt"><p>面がすべて正五角形で、各頂点に3つの面が集まる正十二面体（面の数 \(F=12\)）の、辺の数 \(E\) と頂点の数 \(V\) を求めよ。また、オイラーの多面体定理で確かめよ。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>凸多面体の頂点・辺・面の数を \(V,\ E,\ F\) とすると</p>\[ V-E+F=2 \]
+<p>各面が \(m\) 角形で \(F\) 個あれば、辺は2つの面に共有されるので \(E=\dfrac{mF}{2}\)。各頂点に \(k\) 個の面が集まれば \(V=\dfrac{mF}{k}\)。</p><div class="tip"><span class="tip-h">コツ</span><p>数えるときは「面の辺の数の合計」を先に出して、2でわる（辺）、頂点に集まる面の数でわる（頂点）。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> 辺の数</div><div class="step-b"><p>面の辺の数の合計は \(5\times12=60\)。1辺は2つの面で共有されるので \(E=\dfrac{60}2=30\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> 頂点の数</div><div class="step-b"><p>面の頂点の数の合計は \(5\times12=60\)。1頂点は3つの面で共有されるので \(V=\dfrac{60}3=20\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> 確かめ</div><div class="step-b"><p>\(V-E+F=20-30+12=2\)</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ E=30,\ V=20,\ \ V-E+F=20-30+12=2 \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 2</h2><ol class="prac pf"><li><div class="pw"><div class="pt">正八面体（面は正三角形で \(F=8\)、各頂点に4つの面が集まる）の \(E\), \(V\)</div></div></li><li><div class="pw"><div class="pt">正二十面体（面は正三角形で \(F=20\)、各頂点に5つの面が集まる）の \(E\), \(V\)</div></div></li><li><div class="pw"><div class="pt">立方体（面は正方形で \(F=6\)、各頂点に3つの面が集まる）の \(E\), \(V\)</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-zks08.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="zks07.html">← 前の例題</a><a href="zks09.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/zks-mondai.pdf">問題編（図形の性質・全ページ）</a>　<a href="pdf/zks-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>

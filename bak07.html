@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>例題1 条件付き確率 | 数ラボ</title>
+<meta name="description" content="条件付き確率の解き方を、例題・STEP解答・答案の形で解説。練習問題と解答つき。">
+<link rel="stylesheet" href="katex/katex.min.css">
+<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5593352645322259" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="keiryo.css">
+</head>
+<body>
+<header class="site-h"><div class="wrap">
+<a class="logo" href="index.html"><img src="logo.png" alt="数ラボ（SUU LAB）" width="291" height="108"></a>
+<nav><a href="index.html">ホーム</a><a href="about.html">このサイトについて</a><a href="contact.html">お問い合わせ</a></nav>
+</div></header>
+<main class="wrap">
+
+<p class="crumb"><a href="index.html">ホーム</a> ＞ <a href="subject-A.html">数学A</a> ＞ <a href="unit-joken.html">条件付き確率・期待値</a> ＞ 例題1</p>
+<!-- 広告枠（上）：AdSense承認後、ここに広告コードを貼る -->
+
+<h1 class="lh"><span class="lbadge">例題 1</span><span class="lsub">場合の数と確率　条件付き確率</span></h1>
+<div class="qbox"><div class="qt"><p>40人のクラスで、運動部に入っている人が24人、そのうち女子が10人である。クラスのうち、運動部に入っている人の集合を \(A\)、女子の集合を \(B\) とする。このクラスから1人を選ぶとき、\(P(A)\)、\(P(A\cap B)\)、\(A\) であったときに \(B\) である確率 \(P_A(B)\) を求めよ。</p></div></div>
+<section class="bar navy"><h2>解き方（まず考え方）</h2><p>事象 \(A\) が起こったという条件のもとで、事象 \(B\) が起こる確率を<b>条件付き確率</b>といい、\(P_A(B)\) と書く。</p>
+\[ P_A(B)=\frac{P(A\cap B)}{P(A)}=\frac{n(A\cap B)}{n(A)},\qquad P(A\cap B)=P(A)\,P_A(B) \]<div class="tip"><span class="tip-h">コツ</span><p>「\(A\) のときの \(B\)」の分母は \(A\) だけ（全体ではない）。分母を \(P(A)\) にするのを忘れない。</p></div></section>
+<section class="bar navy"><h2>解答</h2><div class="step"><div class="step-h"><span class="badge">STEP 1</span> \(P(A)\)</div><div class="step-b"><p>\(P(A)=\dfrac{24}{40}=\dfrac35\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 2</span> \(P(A\cap B)\)</div><div class="step-b"><p>運動部で女子は10人。\(P(A\cap B)=\dfrac{10}{40}=\dfrac14\)</p></div></div><div class="step"><div class="step-h"><span class="badge">STEP 3</span> \(P_A(B)\)</div><div class="step-b"><p>\(P_A(B)=\dfrac{1/4}{3/5}=\dfrac5{12}\)（または \(\dfrac{10}{24}=\dfrac5{12}\)）</p></div></div></section>
+<div class="abox"><p class="ah">【答案（テストに書く形）】 </p>\[ P(A)=\frac35,\quad P(A\cap B)=\frac14,\quad P_A(B)=\frac{1/4}{3/5}=\frac5{12} \]<p class="ans-mark">答</p></div>
+<section class="bar navy"><h2>練習問題 1</h2><ol class="prac pf"><li><div class="pw"><div class="pt">50人のうち、\(A\) に入る人が30人、\(A\) と \(B\) の両方に入る人が12人のとき、\(P_A(B)\)</div></div></li><li><div class="pw"><div class="pt">当たり3本、はずれ7本の計10本のくじから、元にもどさずに2本引く。1本目も2本目も当たる確率</div></div></li><li><div class="pw"><div class="pt">\(P(A)=0.6\), \(P(A\cap B)=0.24\) のとき、\(P_A(B)\)</div></div></li></ol></section>
+
+<p><a class="btn" href="kaito-bak07.html">解答を見る（別冊）</a></p>
+<!-- 広告枠（中）：AdSense承認後、ここに広告コードを貼る -->
+<nav class="pn"><a href="bak06.html">← 前の例題</a><a href="bak08.html">次の例題 →</a></nav>
+<!-- 広告枠（下）：AdSense承認後、ここに広告コードを貼る -->
+<p class="dl">PDF：<a href="pdf/bak-mondai.pdf">問題編（場合の数と確率・全ページ）</a>　<a href="pdf/bak-bessatsu.pdf">別冊 練習問題の解答</a></p>
+
+</main>
+<footer class="site-f"><div class="wrap">
+<p><a href="about.html">このサイトについて</a>｜<a href="contact.html">お問い合わせ</a>｜<a href="privacy.html">プライバシーポリシー</a></p>
+<p>© 数ラボ　掲載の問題・解説はすべてオリジナルです。</p>
+</div></footer>
+<script src="katex/katex.min.js"></script>
+<script src="katex/auto-render.min.js"></script>
+<script>
+renderMathInElement(document.body,{delimiters:[{left:"\\[",right:"\\]",display:true},{left:"\\(",right:"\\)",display:false}],throwOnError:false});
+</script>
+</body>
+</html>
