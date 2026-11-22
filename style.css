@@ -57,6 +57,11 @@ main{padding-top:14px;padding-bottom:30px}
 .dl{font-size:.9rem;color:#555}
 .hero{background:var(--qbg);border:1.5px solid var(--qfr);border-radius:12px;padding:12px 20px;margin:10px 0}
 .hero h1{margin:4px 0;color:var(--navy);font-size:1.6rem}
+.hero-big{padding:22px 28px 26px}
+.hero-big h1{margin:0 0 6px;text-align:center;line-height:0}
+.hero-big h1 img{display:block;width:100%;max-width:560px;height:auto;margin:0 auto}
+.hero-big p{margin:14px 0 0;font-size:1.02rem;line-height:1.9}
+@media(max-width:560px){.hero-big{padding:16px 16px 20px}.hero-big p{font-size:.95rem}}
 .sh{border-left:5px solid var(--navy);padding-left:10px;font-size:1.2rem;margin-top:22px}
 .cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
 .card{display:flex;flex-direction:column;gap:6px;border:1.5px solid var(--qfr);border-radius:12px;padding:12px 14px;text-decoration:none;color:#222;background:#fff}
